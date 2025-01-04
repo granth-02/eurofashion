@@ -1,0 +1,37 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import About from './Components/About';
+import './App.css';
+import Know from './Components/Know';
+import Suits from './Components/Suits';
+import BlueSuit from './Components/BlueSuit';
+import GreySuit from './Components/GreySuit';
+import CharcoalSuit from './Components/CharcoalSuit';
+import BlackSuit from './Components/BlackSuit';
+import BrownSuit from './Components/BrownSuit';
+
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/know-your-suit' element={<Know />} />
+          <Route exact path='/suits' element={<Suits />} />
+          <Route exact path='/suits/colors/blue' element={<BlueSuit />} />
+          <Route exact path='/suits/colors/grey' element={<GreySuit />} />
+          <Route exact path='/suits/colors/charcoal' element={<CharcoalSuit />} />
+          <Route exact path='/suits/colors/black' element={<BlackSuit />} />
+          <Route exact path='/suits/colors/brown' element={<BrownSuit />} />
+
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+
+export default App;
