@@ -11,6 +11,11 @@ import GreySuit from './Components/GreySuit';
 import CharcoalSuit from './Components/CharcoalSuit';
 import BlackSuit from './Components/BlackSuit';
 import BrownSuit from './Components/BrownSuit';
+import CheckSuits from './Components/CheckSuit';
+import StripeSuit from './Components/StripeSuit';
+import SimpleSuit from './Components/SimpleSuit';
+import POWSuit from './Components/POWSuit';
+import HBSuit from './Components/HBSuit';
 
 function App() {
   return (
@@ -27,7 +32,11 @@ function App() {
           <Route exact path='/suits/colors/charcoal' element={<CharcoalSuit />} />
           <Route exact path='/suits/colors/black' element={<BlackSuit />} />
           <Route exact path='/suits/colors/brown' element={<BrownSuit />} />
-
+          <Route exact path='/suits/patterns/checks' element={<CheckSuits />} />
+          <Route exact path='/suits/patterns/stripes' element={<StripeSuit />} />
+          <Route exact path='/suits/patterns/simple' element={<SimpleSuit />} />
+          <Route exact path='/suits/patterns/POW' element={<POWSuit />} />
+          <Route exact path='/suits/patterns/HB' element={<HBSuit />} />
         </Routes>
       </Router>
     </div>

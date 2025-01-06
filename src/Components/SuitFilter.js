@@ -6,9 +6,11 @@ const SuitFilter = (props) => {
                 <FilterOption>
                   <a>Pattern</a>
                   <Dropdown>
-                    <a href="/patterns/stripes">Stripes</a>
-                    <a href="/patterns/simple">Simple</a>
-                    <a href="/patterns/pow">POW</a>
+                    <a href="/suits/patterns/checks">Checks</a>
+                    <a href="/suits/patterns/HB">HB</a>
+                    <a href="/suits/patterns/simple">Simple</a>
+                    <a href="/suits/patterns/stripes">Stripes</a>
+                    <a href="/suits/patterns/POW">POW</a>
                   </Dropdown>
                 </FilterOption>
 

@@ -9,7 +9,7 @@ const Navbar = (props) => {
           <Show src={logo} />
         </Logo>
         <Bar>
-          <a className="active" href="/home">
+          <a className="active" href="/">
             <span>HOME</span>
           </a>
           <a href="/about">
