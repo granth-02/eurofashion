@@ -1,22 +1,29 @@
+import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../Images/Logo.png";
 
-const Navbar = (props) => {
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div>
       <Nav>
-        <Logo>
-          <Show src={logo} />
+        <Logo href="/">
+          <Show src={logo} alt="Logo" />
         </Logo>
-        <Bar>
+        <MenuIcon onClick={toggleMenu}>
+          ☰
+        </MenuIcon>
+        <Bar menuOpen={menuOpen}>
           <a className="active" href="/">
             <span>HOME</span>
           </a>
-          <a href="/about">
-            <span>ABOUT</span>
-          </a>
           <Dropdown>
-            <a href="/suits">
+            <a>
               <span>SUITS</span>
             </a>
             <DropdownContent>
@@ -25,7 +32,7 @@ const Navbar = (props) => {
             </DropdownContent>
           </Dropdown>
           <Dropdown>
-            <a href="/">
+            <a href="/shirts">
               <span>SHIRTS</span>
             </a>
             <DropdownContent>
@@ -33,8 +40,11 @@ const Navbar = (props) => {
               <a href="/styles">STYLES</a>
             </DropdownContent>
           </Dropdown>
-          <a href="/">
+          <a href="/contact">
             <span>CONTACT</span>
+          </a>
+          <a href="/about">
+            <span>ABOUT</span>
           </a>
         </Bar>
         <Since>Since 1995</Since>
@@ -54,10 +64,8 @@ const Nav = styled.nav`
   left: 0;
   height: 100px;
   background-color: white;
-  
   padding: 0 20px;
 
-  /* For smaller screens, stack content */
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
@@ -69,10 +77,6 @@ const Logo = styled.a`
   margin-top: 0px;
   max-height: 70px;
   display: inline-block;
-
-  @media (max-width: 768px) {
-    margin-bottom: 10px;
-  }
 
   img {
     display: block;
@@ -87,6 +91,16 @@ const Show = styled.img`
   }
 `;
 
+const MenuIcon = styled.div`
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
 const Bar = styled.div`
   display: flex;
   align-items: center;
@@ -94,10 +108,10 @@ const Bar = styled.div`
   flex: 0.9;
   gap: 40px;
 
-  /* Stack links on smaller screens */
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 20px;
+    display: ${({ menuOpen }) => (menuOpen ? "flex" : "none")};
   }
 
   a {
@@ -151,7 +165,7 @@ const Dropdown = styled.div`
 const DropdownContent = styled.div`
   display: none;
   position: absolute;
-  top: 105%; /* Align dropdown below the parent */
+  top: 105%;
   left: 0;
   background-color: white;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -170,7 +184,7 @@ const DropdownContent = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: relative; /* Make dropdown content flow inline */
+    position: relative;
     box-shadow: none;
   }
 `;

@@ -7,19 +7,15 @@ import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import ZoomOutIcon from "@mui/icons-material/ZoomOut";
 import DialogTitle from "@mui/material/DialogTitle";
 
-// Import all suit data from individual files
-import { blueSuits } from "./BlueSuitCard";
-import { greySuits } from "./GreySuitCard";
-import { brownSuits } from "./BrownSuitCard";
-import { charcoalSuits } from "./CharcoalSuitCard";
+import { allSuits } from "./ColorSuitCard";
 
 // Combine all suits into one array
-const allSuits = [
-  ...blueSuits.map((suit) => ({ ...suit, color: "blue" })),
-  ...greySuits.map((suit) => ({ ...suit, color: "grey" })),
-  ...brownSuits.map((suit) => ({ ...suit, color: "brown" })),
-  ...charcoalSuits.map((suit) => ({ ...suit, color: "charcoal" })),
-];
+// const allSuits = [
+//   ...blueSuits.map((suit) => ({ ...suit, color: "blue" })),
+//   ...greySuits.map((suit) => ({ ...suit, color: "grey" })),
+//   ...brownSuits.map((suit) => ({ ...suit, color: "brown" })),
+//   ...charcoalSuits.map((suit) => ({ ...suit, color: "charcoal" })),
+// ];
 
 // Generalized Card Component
 const PatternSuitCard = ({ pattern }) => {

@@ -20,7 +20,7 @@ import b10 from "../Images/suit_blue_POW2.webp"
 import b11 from "../Images/suit_blue_stripes.webp"
 
 export const blueSuits = [
-  { src: b1, description: "222405-500 Blue", pattern: "s" },
+  { src: b1, description: "222405-500 Blue", pattern: "simple" },
   { src: b2, description: "501170-420 Blue", pattern: "simple" },
   { src: b3, description: "222401-500 Blue", pattern: "simple" },
   { src: b4, description: "222402-500 Blue", pattern: "simple" },

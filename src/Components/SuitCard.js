@@ -16,11 +16,11 @@ import ZoomOutIcon from "@mui/icons-material/ZoomOut";
 const SuitCard = () => {
   const [open, setOpen] = useState(false);
   const [selectedSuit, setSelectedSuit] = useState(null);
-  const [zoomLevel, setZoomLevel] = useState(1); // State to manage zoom level
+  const [zoomLevel, setZoomLevel] = useState(1);
 
   const handleClickOpen = (suit) => {
     setSelectedSuit(suit);
-    setZoomLevel(1); // Reset zoom level
+    setZoomLevel(1);
     setOpen(true);
   };
 
@@ -29,8 +29,8 @@ const SuitCard = () => {
     setSelectedSuit(null);
   };
 
-  const handleZoomIn = () => setZoomLevel((prev) => Math.min(prev + 0.2, 3)); // Max zoom 3x
-  const handleZoomOut = () => setZoomLevel((prev) => Math.max(prev - 0.2, 1)); // Min zoom 1x
+  const handleZoomIn = () => setZoomLevel((prev) => Math.min(prev + 0.2, 3));
+  const handleZoomOut = () => setZoomLevel((prev) => Math.max(prev - 0.2, 1));
 
   const allSuits = [...blueSuits, ...greySuits, ...charcoalSuits, ...blackSuits, ...brownSuits];
 
@@ -70,13 +70,20 @@ const SuitCard = () => {
 
 const Card = styled.div`
   display: grid;
-  grid-gap: 30px;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 30px;
+  grid-gap: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 20px 10px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
 `;
 
 const Wrap = styled.div`
@@ -96,6 +103,7 @@ const Wrap = styled.div`
     margin-top: 10px;
     border-radius: 5px;
     width: 96%;
+    height: auto;
   }
 `;
 
@@ -103,6 +111,14 @@ const Description = styled.h2`
   color: #2c5ca4;
   text-align: center;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const DialogImageContainer = styled.div`
@@ -113,10 +129,18 @@ const DialogImageContainer = styled.div`
 
   img {
     max-width: 100%;
-    max-height: 80vh;
+    max-height: 70vh;
     transform: scale(${(props) => props.zoom});
     transition: transform 0.3s ease;
     border-radius: 10px;
+
+    @media (max-width: 768px) {
+      max-height: 50vh;
+    }
+
+    @media (max-width: 480px) {
+      max-height: 40vh;
+    }
   }
 `;
 
@@ -132,11 +156,14 @@ const ZoomControls = styled.div`
   gap: 10px;
 
   button {
-    background-color: white; /* White background for the icons */
-    border-radius: 50%;      /* Circular button style */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:disabled {
+      opacity: 0.5;
+    }
   }
 `;
-
 
 export default SuitCard;

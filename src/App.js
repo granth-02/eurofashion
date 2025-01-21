@@ -16,6 +16,7 @@ import StripeSuit from './Components/StripeSuit';
 import SimpleSuit from './Components/SimpleSuit';
 import POWSuit from './Components/POWSuit';
 import HBSuit from './Components/HBSuit';
+import Contact from './Components/Contact';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route exact path='/suits/patterns/simple' element={<SimpleSuit />} />
           <Route exact path='/suits/patterns/POW' element={<POWSuit />} />
           <Route exact path='/suits/patterns/HB' element={<HBSuit />} />
+          <Route exact path='/contact' element={<Contact />} />
         </Routes>
       </Router>
     </div>

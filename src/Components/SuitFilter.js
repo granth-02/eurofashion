@@ -1,103 +1,120 @@
 import styled from "styled-components";
 
 const SuitFilter = (props) => {
-    return (
-      <Filter>
-                <FilterOption>
-                  <a>Pattern</a>
-                  <Dropdown>
-                    <a href="/suits/patterns/checks">Checks</a>
-                    <a href="/suits/patterns/HB">HB</a>
-                    <a href="/suits/patterns/simple">Simple</a>
-                    <a href="/suits/patterns/stripes">Stripes</a>
-                    <a href="/suits/patterns/POW">POW</a>
-                  </Dropdown>
-                </FilterOption>
+  return (
+    <FilterSection>
+      {/* Patterns Section */}
+      <FilterContainer>
+        <Title>Choose Your Pattern</Title>
+        <CircleGridContainer>
+          <CircleImageHolder href="/suits/patterns/checks">
+            <img src="https://www.joelandsonfabrics.com/cdn/shop/files/25921awoolandcaratgold.jpg?v=1729698758&width=940" alt="Checks" />
+            <p>Checks</p>
+          </CircleImageHolder>
+          <CircleImageHolder href="/suits/patterns/HB">
+            <img src="https://westwoodhart.com/cdn/shop/products/D416241D-2.jpg?v=1648203067&width=1024" alt="HB" />
+            <p>HB</p>
+          </CircleImageHolder>
+          <CircleImageHolder href="/suits/patterns/simple">
+            <img src="https://www.yorkshirefabric.com/cdn/shop/files/1Q31230-45_3024x.jpg?v=1723670324" alt="Simple" />
+            <p>Simple</p>
+          </CircleImageHolder>
+          <CircleImageHolder href="/suits/patterns/stripes">
+            <img src="https://www.studiosuits.com/cdn/shop/files/thomasshelbypeakyblindersbrownwoolsuitlook_2_1300x.jpg?v=1734584602" alt="Stripes" />
+            <p>Stripes</p>
+          </CircleImageHolder>
+          <CircleImageHolder href="/suits/patterns/POW">
+            <img src="https://drapersitaly.it/public/uploads/drapersmedia-qhr6-20220909-tessuto_18045.jpg" alt="POW" />
+            <p>POW</p>
+          </CircleImageHolder>
+        </CircleGridContainer>
+      </FilterContainer>
 
-                <FilterOption>
-                  <a>Color</a>
-                  <Dropdown>
-                    <a href="/suits/colors/blue">Blue</a>
-                    <a href="/suits/colors/grey">Grey</a>
-                    <a href="/suits/colors/black">Black</a>
-                    <a href="/suits/colors/charcoal">Charcoal</a>
-                    <a href="/suits/colors/brown">Brown</a>
-                  </Dropdown>
-                </FilterOption>
-            </Filter>
-    )
-}
+      {/* Colors Section */}
+      <FilterContainer>
+        <Title>Choose Your Color</Title>
+        <CircleGridContainer>
+          <CircleImageHolder href="/suits/colors/blue">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6R9z5fjo_mP9BMhhQXBbs4iqQyPI-XaYrgnp3lb1d6plH8CpK5S7KN4Ff6AMQ1fASOxSNauEibKEN4KXLHF141wJuOnvyHeBun_3FOsij5Sf8vW8d4ceQKEFeFqsuyMB6niuqNIpwGw/s1600/fabric_seamless_blue_woven_texture.jpg" alt="Blue" />
+            <p>Blue</p>
+          </CircleImageHolder>
+          <CircleImageHolder href="/suits/colors/grey">
+            <img src="https://img.freepik.com/free-photo/gray-fabric-textile-textured-background_53876-129707.jpg" alt="Grey" />
+            <p>Grey</p>
+          </CircleImageHolder>
+          <CircleImageHolder href="/suits/colors/black">
+            <img src="https://img.freepik.com/free-photo/abstract-geometric-background-shapes-texture_1194-305455.jpg?semt=ais_hybrid" alt="Black" />
+            <p>Black</p>
+          </CircleImageHolder>
+          <CircleImageHolder href="/suits/colors/charcoal">
+            <img src="https://www.shutterstock.com/image-photo/charcoal-black-fabric-texture-background-600nw-2490090893.jpg" alt="Charcoal" />
+            <p>Charcoal</p>
+          </CircleImageHolder>
+          <CircleImageHolder href="/suits/colors/brown">
+            <img src="https://img.freepik.com/premium-photo/close-up-brown-colour-cotton-fabric-tartare-background_126740-2117.jpg?semt=ais_hybrid" alt="Brown" />
+            <p>Brown</p>
+          </CircleImageHolder>
+        </CircleGridContainer>
+      </FilterContainer>
+    </FilterSection>
+  );
+};
 
-const Filter = styled.div`
+const FilterSection = styled.div`
+  padding: 2rem 0;
+`;
+
+const FilterContainer = styled.div`
+  padding: 2rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 1500px;
+`;
+
+const Title = styled.h2`
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+`;
+
+const CircleGridContainer = styled.div`
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  padding: 0.5rem 1.5rem;
-  margin: 1rem auto;
-  background-color: #2c5ca4;
-  border-radius: 50px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 200px;
-  position: relative;
-  margin-bottom: 10px;
+  margin-top: 20px;
 
-  a {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    padding: 0.4rem 1rem;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s ease;
-    border-radius: 20px;
-    margin: 0 0.5rem;
-    cursor: pointer;
-
-    &:hover {
-      background-color: white;
-      color: #2c5ca4;
-    }
-
-    &.active {
-      background-color: white;
-      color: #2c5ca4;
-      font-weight: bold;
-    }
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
   }
 `;
 
-const Dropdown = styled.div`
-  position: absolute;
-  top: 2.1rem; /* Adjust based on the main filter height */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  display: none;
+const CircleImageHolder = styled.a`
+  display: flex;
   flex-direction: column;
-  padding: 1rem;
-  z-index: 100;
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
 
-  a {
-    font-size: 0.9rem;
-    color: #2c5ca4;
-    padding: 0.5rem;
-    text-align: center;
-    border-radius: 5px;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     &:hover {
-      background-color: #f0f0f0;
+      border: 5px solid #2c5ca4;
     }
   }
-`;
 
-const FilterOption = styled.div`
-  position: relative;
-
-  &:hover ${Dropdown} {
-    display: flex;
+  p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
   }
 `;
 
-export default SuitFilter
+export default SuitFilter;
