@@ -83,7 +83,7 @@ const Carousel = styled(Slider)`
     }
 
     .slick-list{
-        overflow: initial;
+        overflow: hidden;
     }
 
     .slick-prev {
@@ -111,7 +111,7 @@ const Wrap = styled.div`
     }
 
     img{
-        height: 100%;
+        height: auto;
         width: 100%;
         filter: grayscale(50%) brightness(50%);
     }

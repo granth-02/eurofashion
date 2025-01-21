@@ -187,6 +187,7 @@ const Contact = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; 
   height: 80vh;
   padding: 2rem;
   background-color: #f5f5f5;
@@ -267,10 +268,11 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   img {
     max-width: 100%;
-    max-height: 70vh;
+    max-height: auto;
     object-fit: contain;
     border-radius: 10px;
 
