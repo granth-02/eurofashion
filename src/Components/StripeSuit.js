@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SuitFilter from "./SuitFilter"
-import PatternSuitCard from "./PatternSuitCard"
+import SuitCard from "./SuitCard"
 
 const StripeSuit = (props) => {
   return (
@@ -21,7 +21,7 @@ const StripeSuit = (props) => {
             />
           </ImageContainer>
         </Type>
-        <PatternSuitCard pattern="stripes" />
+        <SuitCard pattern="stripes" />
     </Suitgrid>
   )
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SuitFilter from "./SuitFilter"
-import PatternSuitCard from "./PatternSuitCard"
+import SuitCard from "./SuitCard"
 
 const HBSuit = (props) => {
   return (
@@ -20,7 +20,8 @@ const HBSuit = (props) => {
             />
           </ImageContainer>
         </Type>
-        <PatternSuitCard pattern="HB"/>
+        {/* <PatternSuitCard pattern="HB"/> */}
+        <SuitCard pattern="HB" />
     </Suitgrid>
   )
 }

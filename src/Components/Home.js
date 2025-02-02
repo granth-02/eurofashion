@@ -141,7 +141,7 @@ const Home = (props) => {
       <Steps>
         <ImageWrapper>
           <img
-            src="https://img.freepik.com/premium-photo/closeup-hands-young-woman-with-disability-choosing-fabric-color_249974-12748.jpg" // Replace with your desired image URL
+            src="https://img.freepik.com/free-photo/still-life-fashion-designer-s-office_23-2150543693.jpg?ga=GA1.1.1655565684.1734342902&semt=ais_hybrid" // Replace with your desired image URL
             alt="Steps Illustration"
           />
         </ImageWrapper>
@@ -309,7 +309,7 @@ const ImageWrapper = styled.div`
 
   img {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 600px;
     object-fit: contain;
     border-radius: 10px;
 

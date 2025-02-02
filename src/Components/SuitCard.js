@@ -1,27 +1,58 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { styled as muiStyled } from '@mui/material/styles';
-import { blueSuits } from "./BlueSuitCard";
-import { greySuits } from "./GreySuitCard";
-import { charcoalSuits } from "./CharcoalSuitCard";
-import { blackSuits } from "./BlackSuitCard";
-import { brownSuits } from "./BrownSuitCard";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
 import IconButton from "@mui/material/IconButton";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import ZoomOutIcon from "@mui/icons-material/ZoomOut";
+import DialogTitle from "@mui/material/DialogTitle";
+import axios from "axios";
+import CircularProgress from "@mui/material/CircularProgress"; // Import CircularProgress
 
-const SuitCard = () => {
+const API_URL =
+  "https://script.google.com/macros/s/AKfycbxpmV00PpzE0D4RWH_Bov2TTe0HyUZllZ5kPTIIDqGHPeqpPsUnnEcYFPOWGJ_Ajma4/exec"
+const SuitCard = ({ color, pattern }) => {
+  const [suits, setSuits] = useState([]);
+  const [loading, setLoading] = useState(true); // Added state for loading indicator
   const [open, setOpen] = useState(false);
   const [selectedSuit, setSelectedSuit] = useState(null);
-  const [zoomLevel, setZoomLevel] = useState(1);
+  const [zoom, setZoom] = useState(1);
+
+  // Fetch Data from API
+  useEffect(() => {
+    const fetchSuits = async () => {
+      setLoading(true); 
+      try {
+        const response = await axios.get(API_URL);
+        if (Array.isArray(response.data.data)) {
+          setSuits(response.data.data);
+          // console.log('first', response.data);
+        } else {
+          console.error("Data is not in expected format:", response.data);
+          setSuits([]); // Ensure suits is an array
+        }
+      } catch (error) {
+        console.error("Error fetching suits:", error);
+        setSuits([]); 
+      }
+      setLoading(false); 
+    };
+
+    fetchSuits();
+  }, []);
+
+  // Filtering suits based on color or pattern
+  const filteredSuits =
+    color === "all"
+      ? suits
+      : pattern
+      ? suits.filter((suit) => suit.Pattern.toLowerCase() === pattern.toLowerCase())
+      : suits.filter((suit) => suit.Color.toLowerCase() === color.toLowerCase());
 
   const handleClickOpen = (suit) => {
     setSelectedSuit(suit);
-    setZoomLevel(1);
     setOpen(true);
+    setZoom(1);
   };
 
   const handleClose = () => {
@@ -29,35 +60,43 @@ const SuitCard = () => {
     setSelectedSuit(null);
   };
 
-  const handleZoomIn = () => setZoomLevel((prev) => Math.min(prev + 0.2, 3));
-  const handleZoomOut = () => setZoomLevel((prev) => Math.max(prev - 0.2, 1));
+  const handleZoomIn = () => setZoom((prevZoom) => Math.min(prevZoom + 0.2, 3));
+  const handleZoomOut = () => setZoom((prevZoom) => Math.max(prevZoom - 0.2, 1));
 
-  const allSuits = [...blueSuits, ...greySuits, ...charcoalSuits, ...blackSuits, ...brownSuits];
+  if (loading) {
+    return (
+      <LoaderContainer>
+        <CircularProgress /> {/* Display loading spinner */}
+      </LoaderContainer>
+    );
+  }
 
   return (
     <>
       <Card>
-        {allSuits.map((suit, index) => (
+        {filteredSuits.map((suit, index) => (
           <Wrap key={index} onClick={() => handleClickOpen(suit)}>
-            <img src={suit.src} alt={suit.description} />
-            <Description>{suit.description}</Description>
+            <img src={suit.Link} alt={suit.Name} />
+            <Description>{suit.Name}</Description>
           </Wrap>
         ))}
       </Card>
 
-      {/* Dialog for suit details */}
+      {/* Dialog for Zoom */}
       <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
-        <CustomDialogTitle>{selectedSuit?.description}</CustomDialogTitle>
+        <CustomDialogTitle>{selectedSuit?.Name}</CustomDialogTitle>
         <DialogContent>
           {selectedSuit && (
-            <DialogImageContainer zoom={zoomLevel}>
-              <img src={selectedSuit.src} alt={selectedSuit.description} />
+            <DialogImageContainer>
+              <ZoomableImage zoom={zoom}>
+                <img src={selectedSuit?.Link} alt={selectedSuit.Name} />
+              </ZoomableImage>
               <ZoomControls>
-                <IconButton onClick={handleZoomOut} disabled={zoomLevel <= 1}>
-                  <ZoomOutIcon />
-                </IconButton>
-                <IconButton onClick={handleZoomIn} disabled={zoomLevel >= 3}>
+                <IconButton onClick={handleZoomIn}>
                   <ZoomInIcon />
+                </IconButton>
+                <IconButton onClick={handleZoomOut}>
+                  <ZoomOutIcon />
                 </IconButton>
               </ZoomControls>
             </DialogImageContainer>
@@ -68,28 +107,19 @@ const SuitCard = () => {
   );
 };
 
+// Styled Components
 const Card = styled.div`
   display: grid;
-  grid-gap: 20px;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  margin: 20px 10px;
-
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-  }
-
-  @media (max-width: 480px) {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 10px;
-  }
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 20px 10px 30px;
 `;
 
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 0;
   border-radius: 10px;
   background-color: white;
   cursor: pointer;
@@ -103,7 +133,6 @@ const Wrap = styled.div`
     margin-top: 10px;
     border-radius: 5px;
     width: 96%;
-    height: auto;
   }
 `;
 
@@ -111,59 +140,40 @@ const Description = styled.h2`
   color: #2c5ca4;
   text-align: center;
   margin-top: 10px;
-
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 0.8rem;
-  }
 `;
 
 const DialogImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+`;
 
+const ZoomableImage = styled.div`
   img {
-    max-width: 100%;
-    max-height: 70vh;
-    transform: scale(${(props) => props.zoom});
+    transform: scale(${({ zoom }) => zoom});
     transition: transform 0.3s ease;
     border-radius: 10px;
-
-    @media (max-width: 768px) {
-      max-height: 50vh;
-    }
-
-    @media (max-width: 480px) {
-      max-height: 40vh;
-    }
+    width: 600px;
   }
 `;
 
-const CustomDialogTitle = muiStyled(DialogTitle)`
+const ZoomControls = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+`;
+
+const CustomDialogTitle = styled(DialogTitle)`
   color: #2c5ca4;
   font-weight: bold;
   text-align: center;
 `;
 
-const ZoomControls = styled.div`
-  margin-top: 10px;
+const LoaderContainer = styled.div`
   display: flex;
-  gap: 10px;
-
-  button {
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-
-    &:disabled {
-      opacity: 0.5;
-    }
-  }
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjust this as necessary */
 `;
 
 export default SuitCard;

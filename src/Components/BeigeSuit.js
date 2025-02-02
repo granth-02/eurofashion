@@ -2,27 +2,27 @@ import styled from "styled-components"
 import SuitFilter from "./SuitFilter"
 import SuitCard from "./SuitCard"
 
-const BlackSuit = (props) => {
+const BeigeSuit = (props) => {
     return (
         <div>
             <Suitgrid>
                 <SuitFilter />
                 <Type>
                     <Content>
-                      <h1>BLACK</h1>
+                      <h1>BEIGE</h1>
                       <p>
-                      A Black Suit is the epitome of timeless elegance, perfect for formal events, business settings, or evening wear. Its sleek and classic appeal makes it a must-have for a sharp and refined look.
-                      </p>
+
+                      An Beige suit is a stylish and versatile choice, offering a modern twist on classic menswear. Its earthy green tone complements various skin tones and pairs well with neutral or warm-colored shirts and accessories. Ideal for both formal and smart-casual occasions, an Beige suit adds a touch of sophistication while maintaining a relaxed, contemporary feel.                      </p>
                     </Content>
                     <ImageContainer>
                       <img
-                        src="https://img.freepik.com/free-photo/painted-solid-concrete-wall-textured-backdrop_53876-108232.jpg?semt=ais_incoming"
+                        src="https://img.freepik.com/premium-photo/photo-mens-beige-linen-suit-mannequin-with-dark-grey-background_1264082-91251.jpg"
                         alt="Man in Suit"
                       />
                     </ImageContainer>
                 </Type>
-                {/* <BlackSuitCard /> */}
-                <SuitCard color='black' />
+                {/* <GreySuitCard /> */}
+                <SuitCard color="Beige" />
             </Suitgrid>   
         </div>
     )
@@ -35,7 +35,6 @@ const Suitgrid = styled.div`
     top: 95px;
     background-color: white;
     text-align: center;
-    
 
 `
 const Type = styled.div`
@@ -141,4 +140,4 @@ const ImageContainer = styled.div`
   }
 `;
 
-export default BlackSuit
+export default BeigeSuit

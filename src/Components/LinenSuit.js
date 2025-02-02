@@ -2,30 +2,28 @@ import styled from "styled-components"
 import SuitFilter from "./SuitFilter"
 import SuitCard from "./SuitCard"
 
-const BlackSuit = (props) => {
-    return (
-        <div>
-            <Suitgrid>
-                <SuitFilter />
-                <Type>
-                    <Content>
-                      <h1>BLACK</h1>
-                      <p>
-                      A Black Suit is the epitome of timeless elegance, perfect for formal events, business settings, or evening wear. Its sleek and classic appeal makes it a must-have for a sharp and refined look.
-                      </p>
-                    </Content>
-                    <ImageContainer>
-                      <img
-                        src="https://img.freepik.com/free-photo/painted-solid-concrete-wall-textured-backdrop_53876-108232.jpg?semt=ais_incoming"
-                        alt="Man in Suit"
-                      />
-                    </ImageContainer>
-                </Type>
-                {/* <BlackSuitCard /> */}
-                <SuitCard color='black' />
-            </Suitgrid>   
-        </div>
-    )
+const LinenSuit = (props) => {
+  return (
+    <Suitgrid>
+        <SuitFilter />
+        <Type>
+          <Content>
+            <h1>LINEN</h1>
+            <p>
+              A Linen suit features a subtle V-shaped weaving pattern resembling a fishbone, offering a sophisticated and textured look. It's ideal for formal and business settings, adding depth and elegance without being overly flashy.            
+            </p>
+          </Content>
+          <ImageContainer>
+            <img
+              src="https://img.freepik.com/premium-photo/photo-mens-beige-linen-suit-mannequin-with-dark-grey-background_1264082-91251.jpg"
+              alt="Man in Suit"
+            />
+          </ImageContainer>
+        </Type>
+        {/* <PatternSuitCard pattern="HB"/> */}
+        <SuitCard pattern="Linen" />
+    </Suitgrid>
+  )
 }
 
 const Suitgrid = styled.div`
@@ -35,14 +33,12 @@ const Suitgrid = styled.div`
     top: 95px;
     background-color: white;
     text-align: center;
-    
-
 `
 const Type = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60vh;
+  height: 51vh;
   padding: 2rem;
   background-color: #f5f5f5;
   margin-bottom: 30px;
@@ -140,5 +136,4 @@ const ImageContainer = styled.div`
     }
   }
 `;
-
-export default BlackSuit
+export default LinenSuit

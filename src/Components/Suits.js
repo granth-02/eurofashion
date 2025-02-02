@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Link } from "react-router-dom";
 import SuitFilter from "./SuitFilter";
 import SuitCard from "./SuitCard";
 
@@ -8,7 +7,7 @@ const Suits = (props) => {
     <div>
         <Suitgrid>
             <SuitFilter />
-            <SuitCard />
+            <SuitCard pattern="all" color="all"/>
             {/* <LibCard /> */}
         </Suitgrid>    
     </div>

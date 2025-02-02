@@ -1,29 +1,28 @@
 import styled from "styled-components"
 import SuitFilter from "./SuitFilter"
-import CharcoalSuitCard from "./CharcoalSuitCard"
-import ColorSuitCard from "./ColorSuitCard"
+import SuitCard from "./SuitCard"
 
-const CharcoalSuit = (props) => {
+const OliveSuit = (props) => {
     return (
         <div>
             <Suitgrid>
                 <SuitFilter />
                 <Type>
                     <Content>
-                      <h1>CHARCOAL</h1>
+                      <h1>OLIVE</h1>
                       <p>
-                      A Charcoal Suit combines sophistication and versatility, making it ideal for business and formal occasions. Its deep, neutral tone pairs effortlessly with a range of shirt and tie combinations, offering a polished and professional appearance.
+                      A beige suit is a timeless and versatile choice, perfect for both formal and casual settings. Its neutral tone pairs effortlessly with a variety of shirts and accessories, creating a refined yet relaxed look. Ideal for warm weather, it exudes understated elegance and modern sophistication.
                       </p>
                     </Content>
                     <ImageContainer>
                       <img
-                        src="https://img.freepik.com/free-photo/black-concrete-wall_53876-92805.jpg?semt=ais_incoming"
+                        src="https://img.freepik.com/premium-photo/photo-mens-forest-green-suit-mannequin-with-burgundy-background_1264082-92942.jpg"
                         alt="Man in Suit"
                       />
                     </ImageContainer>
                 </Type>
-                <CharcoalSuitCard />
-                {/* <ColorSuitCard color='charcoal' /> */}
+                {/* <GreySuitCard /> */}
+                <SuitCard color="olive" />
             </Suitgrid>   
         </div>
     )
@@ -36,7 +35,6 @@ const Suitgrid = styled.div`
     top: 95px;
     background-color: white;
     text-align: center;
-    
 
 `
 const Type = styled.div`
@@ -142,4 +140,4 @@ const ImageContainer = styled.div`
   }
 `;
 
-export default CharcoalSuit
+export default OliveSuit

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SuitFilter from "./SuitFilter"
-import PatternSuitCard from "./PatternSuitCard"
+import SuitCard from "./SuitCard"
 
 const POWSuit = (props) => {
   return (
@@ -20,7 +20,7 @@ const POWSuit = (props) => {
             />
           </ImageContainer>
         </Type>
-        <PatternSuitCard pattern="POW"/>
+        <SuitCard pattern="POW"/>
     </Suitgrid>
   )
 }

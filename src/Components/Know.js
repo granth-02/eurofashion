@@ -1,61 +1,10 @@
 import styled from "styled-components";
 import suitImage from "../Images/suit-anatomy.jpg";
-import phoneKnow from "../Images/Label.png"; // The new image for smaller screens
-
 
 const Know = () => {
   return (
     <SuitContainer>
-      {/* <GrayBackground> */}
-        {/* Conditionally render the image based on screen size */}
         <SuitImage src={suitImage} alt="Suit Diagram" className="desktopImage" />
-        {/* <PhoneImage src={phoneKnow} alt="Phone View Diagram" className="mobileImage" /> */}
-
-        {/* Lapel pointer */}
-        {/* <Pointer className="pointer" style={{ top: "25%", left: "18%" }}>
-          <Info>
-            <Title>Lapel</Title>
-            <Description>Different styles of Lapel available.</Description>
-          </Info>
-          <Line style={{ width: "15vw" }} />
-        </Pointer> */}
-
-        {/* Comfort pointer */}
-        {/* <Pointer className="pointer" style={{ top: "35%", right: "4%" }}>
-          <Line style={{ width: "15vw" }} />
-          <Info>
-            <Title>Comfort is All that Matters</Title>
-            <Description>Tapered, Regular, or loose comfortable fit depending on your choice.</Description>
-          </Info>
-        </Pointer> */}
-
-        {/* Real Button Holes pointer */}
-        {/* <Pointer className="pointer" style={{ top: "70%", left: "19%" }}>
-          <Info>
-            <Title>Real Button Holes</Title>
-            <Description>Sleeves real button holes.</Description>
-          </Info>
-          <Line style={{ width: "12vw" }} />
-        </Pointer> */}
-
-        {/* Button pointer */}
-        {/* <Pointer className="pointer" style={{ top: "55%", right: "13%" }}>
-          <Line style={{ width: "15vw" }} />
-          <Info>
-            <Title>Button</Title>
-            <Description>Choice of horn buttons and mother of pearl buttons.</Description>
-          </Info>
-        </Pointer> */}
-
-        {/* Vent Style pointer */}
-        {/* <Pointer className="pointer" style={{ bottom: "15%", left: "55%" }}>
-          <Line style={{ width: "12vw" }} />
-          <Info>
-            <Title>Vent Style</Title>
-            <Description>Choice of side vents, center, and no vents.</Description>
-          </Info>
-        </Pointer>
-      </GrayBackground> */}
     </SuitContainer>
   );
 };

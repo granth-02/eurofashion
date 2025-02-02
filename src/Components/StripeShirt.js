@@ -1,31 +1,28 @@
 import styled from "styled-components"
-import SuitFilter from "./SuitFilter"
-import SuitCard from "./SuitCard"
+import ShirtFilter from "./ShirtFilter"
+import PatternShirtCard from "./PatternShirtCard"
 
-const BlackSuit = (props) => {
-    return (
-        <div>
-            <Suitgrid>
-                <SuitFilter />
-                <Type>
-                    <Content>
-                      <h1>BLACK</h1>
-                      <p>
-                      A Black Suit is the epitome of timeless elegance, perfect for formal events, business settings, or evening wear. Its sleek and classic appeal makes it a must-have for a sharp and refined look.
-                      </p>
-                    </Content>
-                    <ImageContainer>
-                      <img
-                        src="https://img.freepik.com/free-photo/painted-solid-concrete-wall-textured-backdrop_53876-108232.jpg?semt=ais_incoming"
-                        alt="Man in Suit"
-                      />
-                    </ImageContainer>
-                </Type>
-                {/* <BlackSuitCard /> */}
-                <SuitCard color='black' />
-            </Suitgrid>   
-        </div>
-    )
+const StripeShirt = (props) => {
+  return (
+    <Suitgrid>
+        <ShirtFilter />
+        <Type>
+          <Content>
+            <h1>STRIPES</h1>
+            <p>
+            Striped shirts are classic and versatile, with pattern like vertical stripes. They suit casual and formal styles, adding a touch of elegance and personality.            </p>
+          
+          </Content>
+          <ImageContainer>
+            <img
+              src="https://img.freepik.com/premium-photo/italian-fashion-business-shirt-classical-dresscode-ready-business-trip_521059-1407.jpg"
+              alt="Man in Suit"
+            />
+          </ImageContainer>
+        </Type>
+        <PatternShirtCard pattern="stripes" />
+    </Suitgrid>
+  )
 }
 
 const Suitgrid = styled.div`
@@ -35,14 +32,12 @@ const Suitgrid = styled.div`
     top: 95px;
     background-color: white;
     text-align: center;
-    
-
 `
 const Type = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60vh;
+  height: 62vh;
   padding: 2rem;
   background-color: #f5f5f5;
   margin-bottom: 30px;
@@ -141,4 +136,4 @@ const ImageContainer = styled.div`
   }
 `;
 
-export default BlackSuit
+export default StripeShirt

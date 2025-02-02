@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SuitFilter from "./SuitFilter"
-import PatternSuitCard from "./PatternSuitCard"
+import SuitCard from "./SuitCard"
 
 const SimpleSuit = (props) => {
   return (
@@ -8,9 +8,9 @@ const SimpleSuit = (props) => {
         <SuitFilter />
         <Type>
           <Content>
-            <h1>SIMPLE</h1>
+            <h1>SOLID</h1>
             <p>
-            A Simple Suit is a timeless, minimalist option, typically in solid colors like navy, black, or gray. It’s perfect for any occasion, offering a clean and versatile look that never goes out of style.
+            A SOLID Suit is a timeless, minimalist option, typically in solid colors like navy, black, or gray. It’s perfect for any occasion, offering a clean and versatile look that never goes out of style.
             </p>
           
           </Content>
@@ -21,7 +21,7 @@ const SimpleSuit = (props) => {
             />
           </ImageContainer>
         </Type>
-        <PatternSuitCard pattern="simple"/>
+        <SuitCard pattern="solid"/>
     </Suitgrid>
   )
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import SuitFilter from "./SuitFilter";
-import PatternSuitCard from "./PatternSuitCard.js";
+import SuitCard from "./SuitCard.js";
 
 
 const CheckSuit = () => {
@@ -22,7 +22,7 @@ const CheckSuit = () => {
             />
           </ImageContainer>
         </Type>
-        <PatternSuitCard pattern="checks"/>
+        <SuitCard pattern="checks"/>
     </Suitgrid>
   );
 };

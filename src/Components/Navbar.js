@@ -32,12 +32,12 @@ const Navbar = () => {
             </DropdownContent>
           </Dropdown>
           <Dropdown>
-            <a href="/shirts">
+            <a>
               <span>SHIRTS</span>
             </a>
             <DropdownContent>
               <a href="/know-your-shirt">KNOW YOUR SHIRT</a>
-              <a href="/styles">STYLES</a>
+              <a href="/shirts">STYLES</a>
             </DropdownContent>
           </Dropdown>
           <a href="/contact">

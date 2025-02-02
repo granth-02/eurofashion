@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import SuitFilter from "./SuitFilter"
-import BrownSuitCard from "./BrownSuitCard"
-import ColorSuitCard from "./ColorSuitCard"
+import SuitCard from "./SuitCard"
 
 const BrownSuit = (props) => {
     return (
@@ -22,8 +21,8 @@ const BrownSuit = (props) => {
                       />
                     </ImageContainer>
                 </Type>
-                <BrownSuitCard />
-                {/* <ColorSuitCard color='brown' /> */}
+                {/* <BrownSuitCard /> */}
+                <SuitCard color='brown' />
             </Suitgrid>   
         </div>
     )

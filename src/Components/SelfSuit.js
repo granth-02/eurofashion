@@ -2,30 +2,29 @@ import styled from "styled-components"
 import SuitFilter from "./SuitFilter"
 import SuitCard from "./SuitCard"
 
-const BlackSuit = (props) => {
-    return (
-        <div>
-            <Suitgrid>
-                <SuitFilter />
-                <Type>
-                    <Content>
-                      <h1>BLACK</h1>
-                      <p>
-                      A Black Suit is the epitome of timeless elegance, perfect for formal events, business settings, or evening wear. Its sleek and classic appeal makes it a must-have for a sharp and refined look.
-                      </p>
-                    </Content>
-                    <ImageContainer>
-                      <img
-                        src="https://img.freepik.com/free-photo/painted-solid-concrete-wall-textured-backdrop_53876-108232.jpg?semt=ais_incoming"
-                        alt="Man in Suit"
-                      />
-                    </ImageContainer>
-                </Type>
-                {/* <BlackSuitCard /> */}
-                <SuitCard color='black' />
-            </Suitgrid>   
-        </div>
-    )
+const SelfSuit = (props) => {
+  return (
+    <Suitgrid>
+        <SuitFilter />
+        <Type>
+          <Content>
+            <h1>SELF</h1>
+            <p>
+            Self-suits are a type of fabric pattern used in men's suiting, where the design is subtle yet distinctive. <b>The Herringbone (HB)</b> pattern features a distinctive V-shaped weave that creates a chevron-like effect, often giving the fabric a textured look. <b>The Birds Eye</b> pattern is characterized by small, repeating circles that give the fabric a woven, textured appearance. <b>The Prince of Wales (POW)</b> pattern combines checks and stripes, creating a sophisticated and classic style that’s often associated with British tailoring. Each of these patterns adds unique character and elegance to a suit, enhancing the wearer's presence.</p>
+          
+          </Content>
+          <ImageContainer>
+            <img
+              src="https://bondonabudget.com/wp-content/uploads/2020/07/grey-check-suit-2_large.png?w=640"
+              alt="Man in Suit"
+            />
+          </ImageContainer>
+        </Type>
+        <SuitCard pattern="HB"/>
+        <SuitCard pattern="Birds Eye"/>
+        <SuitCard pattern="POW"/>
+    </Suitgrid>
+  )
 }
 
 const Suitgrid = styled.div`
@@ -35,14 +34,12 @@ const Suitgrid = styled.div`
     top: 95px;
     background-color: white;
     text-align: center;
-    
-
 `
 const Type = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60vh;
+  height: 68.5vh;
   padding: 2rem;
   background-color: #f5f5f5;
   margin-bottom: 30px;
@@ -141,4 +138,4 @@ const ImageContainer = styled.div`
   }
 `;
 
-export default BlackSuit
+export default SelfSuit
