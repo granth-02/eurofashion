@@ -191,7 +191,7 @@ const DropdownContent = styled.div`
 
 const Since = styled.a`
   background-color: #2c5ca4;
-  color: #ffccc4;
+  color:rgb(255, 255, 255);
   padding: 10px 12px;
   text-transform: capitalize;
   letter-spacing: 1.5px;
