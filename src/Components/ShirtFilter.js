@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const ShirtFilter = (props) => {
   return (
@@ -7,23 +8,23 @@ const ShirtFilter = (props) => {
       <FilterContainer>
         <Title>Choose Your Pattern</Title>
         <CircleGridContainer>
-          <CircleImageHolder href="/shirts/patterns/checks">
+          <CircleImageHolder to="/shirts/patterns/checks">
             <img src="https://img.freepik.com/premium-vector/fabric-plaid-seamless-vector-background-pattern-with-texture-check-tartan-textile_87543-22303.jpg" alt="Checks" />
             <p>Checks</p>
           </CircleImageHolder>
-          <CircleImageHolder href="/shirts/patterns/HB">
+          <CircleImageHolder to="/shirts/patterns/HB">
             <img src="https://www.apposta.com/MTF//Content/menu/Spinato.jpg" alt="HB" />
             <p>HB</p>
           </CircleImageHolder>
-          <CircleImageHolder href="/shirts/patterns/solid">
+          <CircleImageHolder to="/shirts/patterns/solid">
             <img src="https://cdn-gen.shabbyfabrics.com/image/350x350/pid-88370-bellasolids-9900-262-nomark.jpg?1581724800" alt="Solid" />
             <p>Solid</p>
           </CircleImageHolder>
-          <CircleImageHolder href="/shirts/patterns/stripes">
+          <CircleImageHolder to="/shirts/patterns/stripes">
             <img src="https://img.freepik.com/free-photo/stripes-fabric-textured-background_53876-32104.jpg?semt=ais_hybrid" alt="Stripes" />
             <p>Stripes</p>
           </CircleImageHolder>
-          <CircleImageHolder href="/shirts/patterns/linen">
+          <CircleImageHolder to="/shirts/patterns/linen">
             <img src="https://img.freepik.com/free-photo/top-view-fabric-texture-background_23-2148934899.jpg" alt="Stripes" />
             <p>Linen</p>
           </CircleImageHolder>
@@ -63,7 +64,7 @@ const CircleGridContainer = styled.div`
   }
 `;
 
-const CircleImageHolder = styled.a`
+const CircleImageHolder = styled(Link)`
   display: flex;
   flex-direction: column;
   align-items: center;
