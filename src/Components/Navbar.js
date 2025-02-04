@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../Images/Logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,43 +13,41 @@ const Navbar = () => {
   return (
     <div>
       <Nav>
-        <Logo href="/">
+        <Logo to="/">
           <Show src={logo} alt="Logo" />
         </Logo>
-        <MenuIcon onClick={toggleMenu}>
-          ☰
-        </MenuIcon>
+        <MenuIcon onClick={toggleMenu}>☰</MenuIcon>
         <Bar menuOpen={menuOpen}>
-          <a className="active" href="/">
+          <StyledLink to="/">
             <span>HOME</span>
-          </a>
+          </StyledLink>
           <Dropdown>
-            <a>
+            <StyledLink as="div">
               <span>SUITS</span>
-            </a>
+            </StyledLink>
             <DropdownContent>
-              <a href="/know-your-suit">KNOW YOUR SUIT</a>
-              <a href="/suits">FABRICS</a>
+              <StyledLink to="/know-your-suit">KNOW YOUR SUIT</StyledLink>
+              <StyledLink to="/suits">FABRICS</StyledLink>
             </DropdownContent>
           </Dropdown>
           <Dropdown>
-            <a>
+            <StyledLink as="div">
               <span>SHIRTS</span>
-            </a>
+            </StyledLink>
             <DropdownContent>
-              <a href="/know-your-shirt">KNOW YOUR SHIRT</a>
-              <a href="/shirts">STYLES</a>
+              <StyledLink to="/know-your-shirt">KNOW YOUR SHIRT</StyledLink>
+              <StyledLink to="/shirts">STYLES</StyledLink>
             </DropdownContent>
           </Dropdown>
-          <a href="/jacket">
+          <StyledLink to="/jacket">
             <span>JACKETS</span>
-          </a>
-          <a href="/contact">
+          </StyledLink>
+          <StyledLink to="/contact">
             <span>CONTACT</span>
-          </a>
-          <a href="/about">
+          </StyledLink>
+          <StyledLink to="/about">
             <span>ABOUT</span>
-          </a>
+          </StyledLink>
         </Bar>
         <Since>Since 1995</Since>
       </Nav>
@@ -56,6 +55,7 @@ const Navbar = () => {
   );
 };
 
+// Styled Components (No Changes in Styling)
 const Nav = styled.nav`
   display: flex;
   position: fixed;
@@ -76,7 +76,7 @@ const Nav = styled.nav`
   }
 `;
 
-const Logo = styled.a`
+const Logo = styled(Link)`
   margin-top: 0px;
   max-height: 70px;
   display: inline-block;
@@ -116,42 +116,43 @@ const Bar = styled.div`
     gap: 20px;
     display: ${({ menuOpen }) => (menuOpen ? "flex" : "none")};
   }
+`;
 
-  a {
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
+const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  text-decoration: none;
 
-    span {
-      color: black;
-      font-size: 18px;
-      letter-spacing: 2px;
-      line-height: 1.08;
-      position: relative;
-      white-space: nowrap;
+  span {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.08;
+    position: relative;
+    white-space: nowrap;
 
-      &:before {
-        background-color: #2c5ca4;
-        bottom: -6px;
-        content: "";
-        height: 2px;
-        left: 0px;
-        opacity: 0;
-        position: absolute;
-        right: 0px;
-        transform-origin: left center;
-        transform: scaleX(0);
-        transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-        visibility: hidden;
-        width: auto;
-      }
+    &:before {
+      background-color: #2c5ca4;
+      bottom: -6px;
+      content: "";
+      height: 2px;
+      left: 0px;
+      opacity: 0;
+      position: absolute;
+      right: 0px;
+      transform-origin: left center;
+      transform: scaleX(0);
+      transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+      visibility: hidden;
+      width: auto;
     }
+  }
 
-    &:hover span:before {
-      transform: scaleX(1);
-      visibility: visible;
-      opacity: 1;
-    }
+  &:hover span:before {
+    transform: scaleX(1);
+    visibility: visible;
+    opacity: 1;
   }
 `;
 
@@ -174,7 +175,7 @@ const DropdownContent = styled.div`
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 
-  a {
+  ${StyledLink} {
     padding: 10px 20px;
     text-decoration: none;
     color: black;
@@ -194,7 +195,7 @@ const DropdownContent = styled.div`
 
 const Since = styled.a`
   background-color: #2c5ca4;
-  color:rgb(255, 255, 255);
+  color: white;
   padding: 10px 12px;
   text-transform: capitalize;
   letter-spacing: 1.5px;
