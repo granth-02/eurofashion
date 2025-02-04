@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/eurofashion/static/css/main.3002471e.css",
-    "main.js": "/eurofashion/static/js/main.82580f50.js",
-    "static/js/156.7f83abca.chunk.js": "/eurofashion/static/js/156.7f83abca.chunk.js",
-    "static/media/sl1.jpg": "/eurofashion/static/media/sl1.f233fc827a1ec1bdc1e5.jpg",
-    "static/media/sl3.jpg": "/eurofashion/static/media/sl3.26e08ca838f796ff4832.jpg",
-    "static/media/sl2.jpg": "/eurofashion/static/media/sl2.89058a00325cab379c43.jpg",
-    "static/media/suit-anatomy.jpg": "/eurofashion/static/media/suit-anatomy.026a495148f021aa56b6.jpg",
-    "static/media/Logo.png": "/eurofashion/static/media/Logo.7d22e359b14c971893ab.png",
-    "static/media/slick.svg": "/eurofashion/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/eurofashion/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/eurofashion/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/eurofashion/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/eurofashion/index.html",
-    "main.3002471e.css.map": "/eurofashion/static/css/main.3002471e.css.map",
-    "main.82580f50.js.map": "/eurofashion/static/js/main.82580f50.js.map",
-    "156.7f83abca.chunk.js.map": "/eurofashion/static/js/156.7f83abca.chunk.js.map"
+    "main.css": "/static/css/main.4a04e609.css",
+    "main.js": "/static/js/main.90503524.js",
+    "static/js/156.7f83abca.chunk.js": "/static/js/156.7f83abca.chunk.js",
+    "static/media/sl1.jpg": "/static/media/sl1.f233fc827a1ec1bdc1e5.jpg",
+    "static/media/sl3.jpg": "/static/media/sl3.26e08ca838f796ff4832.jpg",
+    "static/media/sl2.jpg": "/static/media/sl2.89058a00325cab379c43.jpg",
+    "static/media/suit-anatomy.jpg": "/static/media/suit-anatomy.026a495148f021aa56b6.jpg",
+    "static/media/Logo.png": "/static/media/Logo.7d22e359b14c971893ab.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.4a04e609.css.map": "/static/css/main.4a04e609.css.map",
+    "main.90503524.js.map": "/static/js/main.90503524.js.map",
+    "156.7f83abca.chunk.js.map": "/static/js/156.7f83abca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3002471e.css",
-    "static/js/main.82580f50.js"
+    "static/css/main.4a04e609.css",
+    "static/js/main.90503524.js"
   ]
 }
