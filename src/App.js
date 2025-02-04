@@ -29,7 +29,6 @@ import LinenShirt from './Components/LinenShirt';
 function App() {
   return (
     <div className="App">
-      <Router>
         <Navbar />
         <Routes>
           <Route exact path='/' element={<Home />} />
@@ -56,7 +55,6 @@ function App() {
           <Route exact path='/shirts/patterns/HB' element={<HBShirt />} />
           <Route exact path='/contact' element={<Contact />} />
         </Routes>
-      </Router>
     </div>
   );
 }
