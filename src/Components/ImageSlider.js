@@ -47,8 +47,8 @@ const ImgSlider = (props) => {
 }
 
 const Carousel = styled(Slider)`
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 10rem;
+    /* padding: 1px; */
     
     @media (max-width: 768px) {
         margin-top: 200px; /* Increased margin for smaller screens */

@@ -1,126 +1,10 @@
-// import styled from "styled-components";
-// import ImgSlider from "./ImageSlider";
-
-// const Home = (props) => {
-//   return (
-//     <Container>
-//       <Contact>
-//         <ImageContainer>
-//           <img
-//             src="https://wallpapers.com/images/hd/man-in-suit-pictures-vyjjbqkjo4p4yp19.jpg"
-//             alt="Man in Suit"
-//           />
-//           <OverlayContent>
-//             <h1>CUSTOM TAILORED FOR YOU</h1>
-//             <p>
-//               Custom tailored suits, shirts, pants, and outerwear - made to your personal
-//               measurements. Contact us by clicking the button bellow.
-//             </p>
-//             <a href="/contact">Book Your Appointment</a>
-//           </OverlayContent>
-//         </ImageContainer>
-//       </Contact>
-//       <ImgSlider />
-//     </Container>
-//   );
-// };
-
-// const Container = styled.main`
-//   position: relative;
-//   min-height: calc(100vh - 250px);
-//   overflow-x: hidden;
-//   display: block;
-//   top: 72px;
-// `;
-
-// const Contact = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 80vh; /* Adjust height as needed */
-// `;
-
-// const ImageContainer = styled.div`
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-
-//   img {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover; /* Ensures the image spans the full area */
-//     /* margin-top: 50px; */
-//   }
-// `;
-
-// const OverlayContent = styled.div`
-//   position: absolute;
-//   top: 20%;
-//   left: 10%;
-//   z-index: 2;
-//   max-width: 40%; /* Restrict text width for a neat layout */
-//   text-align: left;
-//   color: white;
-  
-
-//   h1 {
-//     font-size: 2.5rem;
-//     font-weight: 500;
-//     margin-bottom: 1rem;
-//     /* color: #333; */
-//   }
-
-//   p {
-//     font-size: 1.1rem;
-//     margin-bottom: 2rem;
-//     /* color: #555; */
-//     line-height: 1.6;
-//   }
-
-//   span {
-//     display: block;
-//     font-size: 1rem;
-//     margin-bottom: 2rem;
-
-//     a {
-//       /* color: #2c5ca4; */
-//       text-decoration: underline;
-
-//       &:hover {
-//         text-decoration: none;
-//         color: white;
-//       }
-//     }
-//   }
-
-//   a {
-//     padding: 14px 24px;
-//     font-size: 1rem;
-//     font-weight: bold;
-    
-//     color: white; /* Button text color */
-//     /* background-color: #2c5ca4; Initial blue background */
-//     border: 2px solid white; /* White border for contrast */
-//     border-radius: 5px;
-//     text-decoration: none;
-//     transition: all 0.3s ease; /* Smooth transition for hover effects */
-
-//     &:hover {
-//         background-color: #2c5ca4; /* Transparent blue shade on hover */
-//         color: white; /* Keeps the text white */
-//     }
-// }
-
-// `;
-
-// export default Home;
-  
 import styled from "styled-components";
 import ImgSlider from "./ImageSlider";
+import { Link } from "react-router-dom";
 
 const Home = (props) => {
   return (
+    <>
     <Container>
       <Contact>
         <Content>
@@ -129,7 +13,7 @@ const Home = (props) => {
             Custom tailored suits, shirts, pants, and outerwear - made to your
             personal measurements. Contact us by clicking the button below.
           </p>
-          <a href="/contact">Book Your Appointment</a>
+          <Link to="/contact">Book Your Appointment</Link>
         </Content>
         <ImageContainer>
           <img
@@ -170,8 +54,9 @@ const Home = (props) => {
           </Step>
         </StepsContent>
       </Steps>
-      <ImgSlider />
     </Container>
+    <ImgSlider />
+    </>
   );
 };
 
