@@ -16,7 +16,7 @@ const BeigeSuit = (props) => {
                     </Content>
                     <ImageContainer>
                       <img
-                        src="https://img.freepik.com/premium-photo/photo-mens-beige-linen-suit-mannequin-with-dark-grey-background_1264082-91251.jpg"
+                        src="https://img.freepik.com/premium-photo/background-texture-book-cover_98725-1319.jpg?semt=ais_hybrid"
                         alt="Man in Suit"
                       />
                     </ImageContainer>

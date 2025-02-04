@@ -15,7 +15,7 @@ const SelfSuit = (props) => {
           </Content>
           <ImageContainer>
             <img
-              src="https://bondonabudget.com/wp-content/uploads/2020/07/grey-check-suit-2_large.png?w=640"
+              src="https://img.freepik.com/premium-photo/closeup-brown-herringbone-suit-jacket_1287986-14336.jpg"
               alt="Man in Suit"
             />
           </ImageContainer>

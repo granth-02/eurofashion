@@ -16,7 +16,7 @@ const StripeSuit = (props) => {
           </Content>
           <ImageContainer>
             <img
-              src="https://t3.ftcdn.net/jpg/09/83/46/34/360_F_983463447_Q0EfIVADA6yAF6SEt6ZRAzj8BJlV0v1B.jpg"
+              src="https://img.freepik.com/premium-photo/striped-suit-mannequin-boutique-setting_332713-21361.jpg"
               alt="Man in Suit"
             />
           </ImageContainer>

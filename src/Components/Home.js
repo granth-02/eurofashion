@@ -150,7 +150,7 @@ const Home = (props) => {
             <StepNumber>1</StepNumber>
             <StepTitle>Book Your Appointment</StepTitle>
             <StepDescription>
-              Book your appointment at one of our stores in the heart of London.
+              Book your appointment by filling out our form.
             </StepDescription>
           </Step>
           <Step>

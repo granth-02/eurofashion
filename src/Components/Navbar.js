@@ -40,6 +40,9 @@ const Navbar = () => {
               <a href="/shirts">STYLES</a>
             </DropdownContent>
           </Dropdown>
+          <a href="/jacket">
+            <span>JACKETS</span>
+          </a>
           <a href="/contact">
             <span>CONTACT</span>
           </a>

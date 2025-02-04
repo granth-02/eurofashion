@@ -15,7 +15,7 @@ const HBShirt = (props) => {
           </Content>
           <ImageContainer>
             <img
-              src="https://img.freepik.com/free-photo/top-view-fabric_23-2148817485.jpg"
+              src="https://i.ibb.co/jkWWhCJp/freepik-the-style-is-candid-image-photography-with-natural-35056.png"
               alt="Man in Suit"
             />
           </ImageContainer>
@@ -37,7 +37,7 @@ const Type = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 52vh;
+  height: 62vh;
   padding: 2rem;
   background-color: #f5f5f5;
   margin-bottom: 30px;

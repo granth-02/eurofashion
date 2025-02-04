@@ -17,7 +17,7 @@ const CheckSuit = () => {
           </Content>
           <ImageContainer>
             <img
-              src="https://img.freepik.com/free-photo/portrait-handsome-fashion-stylish-hipster-businessman-model-dressed-elegant-blue-suit-gray_158538-11103.jpg"
+              src="https://img.freepik.com/premium-photo/mannequin-suit_1276726-9009.jpg"
               alt="Man in Suit"
             />
           </ImageContainer>

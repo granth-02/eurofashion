@@ -16,7 +16,7 @@ const OliveSuit = (props) => {
                     </Content>
                     <ImageContainer>
                       <img
-                        src="https://img.freepik.com/premium-photo/photo-mens-forest-green-suit-mannequin-with-burgundy-background_1264082-92942.jpg"
+                        src="https://img.freepik.com/free-photo/fabric-textured-background_53876-42053.jpg"
                         alt="Man in Suit"
                       />
                     </ImageContainer>

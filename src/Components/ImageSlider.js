@@ -37,7 +37,7 @@ const ImgSlider = (props) => {
             <Wrap>
                <a>
                    <img src={sl3} />
-                   <span>28 years
+                   <span>30 years
                    of finesse</span>
                </a>
             </Wrap>

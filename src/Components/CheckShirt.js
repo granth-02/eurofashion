@@ -15,7 +15,7 @@ const CheckShirt = (props) => {
           </Content>
           <ImageContainer>
             <img
-              src="https://img.freepik.com/premium-photo/hanging-striped-shirt-with-wood-hanger-wall_1339-159718.jpg"
+              src="https://img.freepik.com/premium-photo/long-sleeve-checkered-shirt-wooden-hanger-hang-clothing-rack-white-background_43448-32.jpg"
               alt="Man in Suit"
             />
           </ImageContainer>

@@ -31,7 +31,7 @@ const KnowShirt = () => {
     <Type>
         <ImageContainer>
           <img
-            src="https://img.freepik.com/free-photo/close-up-blue-fabric-texture-background_23-2148383545.jpg"
+            src="https://img.freepik.com/free-photo/top-view-fabric-texture-background_23-2148934900.jpg"
             alt="Man in Suit"
           />
         </ImageContainer>
@@ -51,7 +51,7 @@ const KnowShirt = () => {
         </Content>
         <ImageContainer>
           <img
-            src="https://img.freepik.com/free-photo/smooth-elegant-purple-fabric-material-texture_23-2148402307.jpg"
+            src="https://img.freepik.com/free-photo/black-fabric_1253-111.jpg?t=st=1738573004~exp=1738576604~hmac=8b1c1945588d6bce1f9cb95dc8cc0d8d9de6285716fd41edccfdfcf4de48b3d5&w=996"
             alt="Man in Suit"
           />
         </ImageContainer>
@@ -148,7 +148,7 @@ const KnowShirt = () => {
     <FilterSection>
       {/* CUFFS */}
       <FilterContainer>
-        <Title>Cuffs</Title>
+        <Title>CUFFS</Title>
         <CircleGridContainer>
           <CircleImageHolder>
             <img src="https://www.swann-paris.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/P/o/PoignetRond2Boutons.jpg" alt="Checks" />
@@ -209,56 +209,43 @@ const KnowShirt = () => {
 
       {/*Collar Spread*/}   
       <FilterContainer>
-        <Title>Spread</Title>
+        <Title>SPREAD</Title>
         <CircleGridContainer>
           <CircleImageHolder>
             <img src="https://cdn2.propercloth.com/images/collars_overview/tab/tie_thumb.jpg" alt="Checks" />
-            <p>Narrow Spread Tab</p>
+            <p>Tab Collar</p>
           </CircleImageHolder>
           <CircleImageHolder>
             <img src="https://cdn2.propercloth.com/images/collars_overview/straight_point/tie_thumb.jpg" alt="HB" />
-            <p>Narrow Spread</p>
+            <p>Narrow</p>
           </CircleImageHolder>
-          <CircleImageHolder>
+          {/* <CircleImageHolder>
             <img src="https://cdn2.propercloth.com/images/collars_overview/semi_spread/tie_thumb.jpg" alt="Solid" />
             <p>Medium Spread</p>
-          </CircleImageHolder>
+          </CircleImageHolder> */}
           <CircleImageHolder>
             <img src="https://cdn2.propercloth.com/images/collars_overview/button_down_ii/tie_thumb.jpg" alt="Solid" />
-            <p>Medium Spread Buttoned</p>
-          </CircleImageHolder>
-          
-          
-        </CircleGridContainer>
-      </FilterContainer>
-      <FilterContainer>
-        <CircleGridContainer>
-        <CircleImageHolder>
-            <img src="https://cdn2.propercloth.com/images/collars_overview/londoner_ii/tie_thumb.jpg" alt="Solid" />
-            <p>Wide Spread 2.5</p>
+            <p>Button Down</p>
           </CircleImageHolder>
           <CircleImageHolder>
             <img src="https://cdn2.propercloth.com/images/collars_overview/pres_cutaway/tie_thumb.jpg" alt="Solid" />
-            <p>Wide Spread 3</p>
-          </CircleImageHolder>
-          <CircleImageHolder>
-            <img src="https://cdn2.propercloth.com/images/collars_overview/soft_president_spread_iii/tie_thumb.jpg" alt="Solid" />
-            <p>Curved Wide Spread 3</p>
+            <p>Wide Spread</p>
           </CircleImageHolder>
           <CircleImageHolder>
             <img src="https://cdn2.propercloth.com/images/collars_overview/vintage_club/tie_thumb.jpg" alt="Solid" />
-            <p>Round Point Spread</p>
+            <p>Round Point</p>
           </CircleImageHolder>
+          
         </CircleGridContainer>
       </FilterContainer>
 
     {/* Other  */}
       <FilterContainer>
-      <Title>Other Customizations</Title>
+      <Title>OTHER CUSTOMIZATIONS</Title>
         <CircleGridContainer>
         <CircleImageHolder>
-            <img src="https://images.lululemon.com/is/image/lululemon/LM3DJQS_067704_5?size=800,800" alt="Solid" />
-            <p>Pockets <br></br>(With, Without)</p>
+            <img src="https://i.ibb.co/wh2JLfx4/freepik-expand-84061.png" alt="Solid" />
+            <p>Pockets <br></br>(With or Without)</p>
           </CircleImageHolder>
           <CircleImageHolder>
             <img src="https://blog.kamiceria.com/wp-content/uploads/2012/09/ricamo1.png" alt="Solid" />
