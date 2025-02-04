@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/eurofashion/static/css/main.3002471e.css",
-    "main.js": "/eurofashion/static/js/main.d2e76509.js",
+    "main.js": "/eurofashion/static/js/main.edd48152.js",
     "static/js/156.7f83abca.chunk.js": "/eurofashion/static/js/156.7f83abca.chunk.js",
     "static/media/sl1.jpg": "/eurofashion/static/media/sl1.f233fc827a1ec1bdc1e5.jpg",
     "static/media/sl3.jpg": "/eurofashion/static/media/sl3.26e08ca838f796ff4832.jpg",
@@ -14,11 +14,11 @@
     "static/media/slick.woff": "/eurofashion/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/eurofashion/index.html",
     "main.3002471e.css.map": "/eurofashion/static/css/main.3002471e.css.map",
-    "main.d2e76509.js.map": "/eurofashion/static/js/main.d2e76509.js.map",
+    "main.edd48152.js.map": "/eurofashion/static/js/main.edd48152.js.map",
     "156.7f83abca.chunk.js.map": "/eurofashion/static/js/156.7f83abca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3002471e.css",
-    "static/js/main.d2e76509.js"
+    "static/js/main.edd48152.js"
   ]
 }
