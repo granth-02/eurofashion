@@ -32,28 +32,28 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route exact path='/about' element={<About />} />
-          <Route exact path='/know-your-suit' element={<Know />} />
-          <Route exact path='/know-your-shirt' element={<KnowShirt />} />
-          <Route exact path='/suits' element={<Suits />} />
-          <Route exact path='/shirts' element={<Shirts />} />
-          <Route exact path='/suits/colors/blue' element={<BlueSuit />} />
-          <Route exact path='/suits/colors/grey' element={<GreySuit />} />
-          <Route exact path='/suits/colors/black' element={<BlackSuit />} />
-          <Route exact path='/suits/colors/brown' element={<BrownSuit />} />
-          <Route exact path='/suits/colors/olive' element={<OliveSuit />} />
-          <Route exact path='/suits/colors/beige' element={<BeigeSuit />} />
-          <Route exact path='/suits/patterns/checks' element={<CheckSuits />} />
-          <Route exact path='/suits/patterns/solid' element={<SimpleSuit />} />
-          <Route exact path='/suits/patterns/self' element={<SelfSuit />} />
-          <Route exact path='/suits/patterns/linen' element={<LinenSuit />} />
-          <Route exact path='/suits/patterns/stripes' element={<StripeSuit />} />
-          <Route exact path='/shirts/patterns/stripes' element={<StripeShirt />} />
-          <Route exact path='/shirts/patterns/checks' element={<CheckShirt />} />
-          <Route exact path='/shirts/patterns/solid' element={<SolidShirt />} />
-          <Route exact path='/shirts/patterns/linen' element={<LinenShirt />} />
-          <Route exact path='/shirts/patterns/HB' element={<HBShirt />} />
-          <Route exact path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/know-your-suit' element={<Know />} />
+          <Route path='/know-your-shirt' element={<KnowShirt />} />
+          <Route path='/suits' element={<Suits />} />
+          <Route path='/shirts' element={<Shirts />} />
+          <Route path='/suits/colors/blue' element={<BlueSuit />} />
+          <Route path='/suits/colors/grey' element={<GreySuit />} />
+          <Route path='/suits/colors/black' element={<BlackSuit />} />
+          <Route path='/suits/colors/brown' element={<BrownSuit />} />
+          <Route path='/suits/colors/olive' element={<OliveSuit />} />
+          <Route path='/suits/colors/beige' element={<BeigeSuit />} />
+          <Route path='/suits/patterns/checks' element={<CheckSuits />} />
+          <Route path='/suits/patterns/solid' element={<SimpleSuit />} />
+          <Route path='/suits/patterns/self' element={<SelfSuit />} />
+          <Route path='/suits/patterns/linen' element={<LinenSuit />} />
+          <Route path='/suits/patterns/stripes' element={<StripeSuit />} />
+          <Route path='/shirts/patterns/stripes' element={<StripeShirt />} />
+          <Route path='/shirts/patterns/checks' element={<CheckShirt />} />
+          <Route path='/shirts/patterns/solid' element={<SolidShirt />} />
+          <Route path='/shirts/patterns/linen' element={<LinenShirt />} />
+          <Route path='/shirts/patterns/HB' element={<HBShirt />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
     </div>
   );
