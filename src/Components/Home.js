@@ -27,6 +27,7 @@ const Home = (props) => {
           <img
             src="https://img.freepik.com/free-photo/still-life-fashion-designer-s-office_23-2150543693.jpg?ga=GA1.1.1655565684.1734342902&semt=ais_hybrid" // Replace with your desired image URL
             alt="Steps Illustration"
+            // https://img.freepik.com/premium-photo/suit-jackets-hanger-men-fashion-apparel-store-row-many-clothes-rack-wardrobe-n_489084-106.jpg
           />
         </ImageWrapper>
         <StepsContent>
