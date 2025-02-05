@@ -31,7 +31,7 @@ function App() {
     <div className="App">
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/know-your-suit' element={<Know />} />
           <Route path='/know-your-shirt' element={<KnowShirt />} />
