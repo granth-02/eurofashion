@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import shirt from "../Images/shirt-know.webp"
 
 
 
@@ -6,7 +7,7 @@ const KnowShirt = () => {
   return (
     <Suitgrid>
     <SuitContainer>
-        <SuitImage src="https://cdn.shopify.com/s/files/1/0016/5812/6382/files/Collar_stand.jpg?v=1682367021" /> 
+        <SuitImage src={shirt} /> 
         {/* https://www.made2measureclothing.com/wp-content/uploads/2024/12/Shirt-Details-1200x978-1.webp */}
     </SuitContainer>
     <h1>FABRIC QUALITY</h1>
@@ -284,14 +285,14 @@ const Suitgrid = styled.div`
 `
 
 const SuitContainer = styled.div`
-  width: 100%;
+  width: 90%;
   padding: 50px 0;
   margin: 0;
   /* background: url("https://img.freepik.com/free-photo/fabric-textured-background_53876-33695.jpg?semt=ais_hybrid") center center/cover no-repeat; */
 `;
 
 const SuitImage = styled.img`
-  width: 100%;
+  width: 110%;
   height: 50%;
   display: block;
   margin-bottom: -90px;
