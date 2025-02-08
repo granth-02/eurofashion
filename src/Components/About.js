@@ -10,7 +10,7 @@ const About = (props) => {
       </AboutContent>
     </AboutContainer>
 
-      <TeamSection>
+      {/* <TeamSection>
         <TeamMember>
           <ImageContainer>
             <img src="https://www.hollywoodreporter.com/wp-content/uploads/2013/11/lebron_james_original.jpg" alt="Neil McCann" />
@@ -35,7 +35,7 @@ const About = (props) => {
             </MemberDescription>
           </MemberDetails>
         </TeamMember>
-      </TeamSection>
+      </TeamSection> */}
       <TextContent>
       <SubTitle>WHO WE ARE?</SubTitle>
         <Text>
