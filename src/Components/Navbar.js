@@ -4,21 +4,26 @@ import logo from "../Images/Logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div>
       <Nav>
-        <Logo to="/">
+        <Logo to="/" onClick={closeMenu}>
           <Show src={logo} alt="Logo" />
         </Logo>
         <MenuIcon onClick={toggleMenu}>☰</MenuIcon>
         <Bar menuOpen={menuOpen}>
-          <StyledLink to="/">
+          <StyledLink to="/" onClick={closeMenu}>
             <span>HOME</span>
           </StyledLink>
           <Dropdown>
@@ -26,8 +31,8 @@ const Navbar = () => {
               <span>SUITS</span>
             </StyledLink>
             <DropdownContent>
-              <StyledLink to="/know-your-suit">KNOW YOUR SUIT</StyledLink>
-              <StyledLink to="/suits">FABRICS</StyledLink>
+              <StyledLink to="/know-your-suit" onClick={closeMenu}>KNOW YOUR SUIT</StyledLink>
+              <StyledLink to="/suits" onClick={closeMenu}>FABRICS</StyledLink>
             </DropdownContent>
           </Dropdown>
           <Dropdown>
@@ -35,17 +40,17 @@ const Navbar = () => {
               <span>SHIRTS</span>
             </StyledLink>
             <DropdownContent>
-              <StyledLink to="/know-your-shirt">KNOW YOUR SHIRT</StyledLink>
-              <StyledLink to="/shirts">STYLES</StyledLink>
+              <StyledLink to="/know-your-shirt" onClick={closeMenu}>KNOW YOUR SHIRT</StyledLink>
+              <StyledLink to="/shirts" onClick={closeMenu}>STYLES</StyledLink>
             </DropdownContent>
           </Dropdown>
-          <StyledLink to="/jacket">
+          <StyledLink to="/jackets" onClick={closeMenu}>
             <span>JACKETS</span>
           </StyledLink>
-          <StyledLink to="/contact">
+          <StyledLink to="/contact" onClick={closeMenu}>
             <span>CONTACT</span>
           </StyledLink>
-          <StyledLink to="/about">
+          <StyledLink to="/about" onClick={closeMenu}>
             <span>ABOUT</span>
           </StyledLink>
         </Bar>

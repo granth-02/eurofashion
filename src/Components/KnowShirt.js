@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 
+
 const KnowShirt = () => {
   return (
     <Suitgrid>
     <SuitContainer>
-        <SuitImage src="https://blog.tailorman.com/wp-content/uploads/2018/01/linki-shirt-flats-color.jpg" /> 
+        <SuitImage src="https://cdn.shopify.com/s/files/1/0016/5812/6382/files/Collar_stand.jpg?v=1682367021" /> 
+        {/* https://www.made2measureclothing.com/wp-content/uploads/2024/12/Shirt-Details-1200x978-1.webp */}
     </SuitContainer>
     <h1>FABRIC QUALITY</h1>
     <Type>
@@ -79,7 +81,7 @@ const KnowShirt = () => {
         </Content>
         <ImageContainer>
           <img
-            src="https://img.freepik.com/free-photo/smooth-elegant-violet-fabric-material-texture_23-2148402308.jpg"
+            src="https://img.freepik.com/free-photo/gray-fabric-cloth-texture-abstract-background-furniture-upholstery_166373-2498.jpg"
             alt="Man in Suit"
           />
         </ImageContainer>
@@ -109,7 +111,7 @@ const KnowShirt = () => {
         </Content>
         <ImageContainer>
           <img
-            src="https://img.freepik.com/premium-photo/light-purple-background-from-textile-material-fabric-with-natural-texture-backdrop_113767-1977.jpg"
+            src="https://i.ibb.co/C5dJxrXV/Pin-point-oxford-cotton-fabric-02-1487134512-p-2724423-528439.jpg"
             alt="Man in Suit"
           />
         </ImageContainer>
@@ -211,31 +213,39 @@ const KnowShirt = () => {
       <FilterContainer>
         <Title>SPREAD</Title>
         <CircleGridContainer>
-          <CircleImageHolder>
-            <img src="https://cdn2.propercloth.com/images/collars_overview/tab/tie_thumb.jpg" alt="Checks" />
-            <p>Tab Collar</p>
-          </CircleImageHolder>
-          <CircleImageHolder>
-            <img src="https://cdn2.propercloth.com/images/collars_overview/straight_point/tie_thumb.jpg" alt="HB" />
+          <SpreadImageHolder>
+            <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/point-collar-shirt-style.jpg?15455816660528096558" alt="Checks" />
+            <p>Point Collar</p>
+          </SpreadImageHolder>
+          <SpreadImageHolder>
+            <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/narrow-collar-shirt-style.jpg?15455816660528096558" alt="HB" />
             <p>Narrow</p>
-          </CircleImageHolder>
-          {/* <CircleImageHolder>
-            <img src="https://cdn2.propercloth.com/images/collars_overview/semi_spread/tie_thumb.jpg" alt="Solid" />
-            <p>Medium Spread</p>
-          </CircleImageHolder> */}
-          <CircleImageHolder>
-            <img src="https://cdn2.propercloth.com/images/collars_overview/button_down_ii/tie_thumb.jpg" alt="Solid" />
+          </SpreadImageHolder>
+          <SpreadImageHolder>
+            <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/button-down-collar-shirt-style.jpg?15455816660528096558" alt="Solid" />
             <p>Button Down</p>
-          </CircleImageHolder>
-          <CircleImageHolder>
-            <img src="https://cdn2.propercloth.com/images/collars_overview/pres_cutaway/tie_thumb.jpg" alt="Solid" />
+          </SpreadImageHolder>
+          <SpreadImageHolder>
+            <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/hidden-button-collar-shirt-style.jpg?15455816660528096558" alt="Solid" />
+            <p>Hidden Button</p>
+          </SpreadImageHolder>
+        </CircleGridContainer>
+      </FilterContainer>
+      <FilterContainer>
+
+        <CircleGridContainer>
+          <SpreadImageHolder>
+            <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/snap-tab-collar-shirt-style.jpg?15455816660528096558" alt="Checks" />
+            <p>Tab Collar</p>
+          </SpreadImageHolder>
+          <SpreadImageHolder>
+            <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/wide-spread-collar-shirt-style.jpg?15455816660528096558" alt="HB" />
             <p>Wide Spread</p>
-          </CircleImageHolder>
-          <CircleImageHolder>
-            <img src="https://cdn2.propercloth.com/images/collars_overview/vintage_club/tie_thumb.jpg" alt="Solid" />
-            <p>Round Point</p>
-          </CircleImageHolder>
-          
+          </SpreadImageHolder>
+          <SpreadImageHolder>
+            <img src="https://cdn.shopify.com/s/files/1/0981/8178/files/extreme-spread-collar-shirt-style.jpg?15455816660528096558" alt="Solid" />
+            <p>Extreme Wide Spread</p>
+          </SpreadImageHolder>
         </CircleGridContainer>
       </FilterContainer>
 
@@ -244,11 +254,11 @@ const KnowShirt = () => {
       <Title>OTHER CUSTOMIZATIONS</Title>
         <CircleGridContainer>
         <CircleImageHolder>
-            <img src="https://i.ibb.co/wh2JLfx4/freepik-expand-84061.png" alt="Solid" />
+            <img src="https://i.ibb.co/BHL8bN7y/Shirt-Pocket.jpg" alt="Solid" />
             <p>Pockets <br></br>(With or Without)</p>
           </CircleImageHolder>
           <CircleImageHolder>
-            <img src="https://blog.kamiceria.com/wp-content/uploads/2012/09/ricamo1.png" alt="Solid" />
+            <img src="https://cdn.sanity.io/images/tgi56uf8/production/a90f8d03f78cd9f617d09aebf965f6a48536033a-5464x8192.jpg?rect=0,886,5464,6420&w=800&h=940&auto=format" alt="Solid" />
             <p>Initial Embroidary (Chest, Waist, Cuffs)<br></br>(Contrast/No Contrast)</p>
           </CircleImageHolder>
           <CircleImageHolder>
@@ -282,9 +292,9 @@ const SuitContainer = styled.div`
 
 const SuitImage = styled.img`
   width: 100%;
-  height: auto;
+  height: 50%;
   display: block;
-  margin-bottom: -100px;
+  margin-bottom: -90px;
 
   @media (max-width: 768px) {
     margin-top: 100px;
@@ -458,6 +468,33 @@ const CircleImageHolder = styled.a`
 
   img {
     width: 250px;
+    height: 250px;
+    border-radius: 4%;
+    overflow: hidden;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &:hover {
+      border: 5px solid #2c5ca4;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+`;
+
+const SpreadImageHolder = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+
+  img {
+    width: 310px;
     height: 250px;
     border-radius: 4%;
     overflow: hidden;

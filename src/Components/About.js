@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const About = (props) => {
+  console.log("Surprise ;) : https://www.youtube.com/watch?v=dQw4w9WgXcQ")
   return (
     <>
     <AboutContainer>
       <AboutContent>
-        <AboutTitle>28 years of finesse</AboutTitle>
+        <AboutTitle>30 years of finesse</AboutTitle>
       </AboutContent>
     </AboutContainer>
 

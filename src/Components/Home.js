@@ -3,6 +3,7 @@ import ImgSlider from "./ImageSlider";
 import { Link } from "react-router-dom";
 
 const Home = (props) => {
+  console.log("About the Dev: This site was developed by Granth Naik, Github: https://github.com/granth-02/, Linkdn: www.linkedin.com/in/granthnaik")
   return (
     <>
     <Container>
@@ -10,8 +11,8 @@ const Home = (props) => {
         <Content>
           <h1>CUSTOM TAILORED FOR YOU</h1>
           <p>
-            Custom tailored suits, shirts, pants, and outerwear - made to your
-            personal measurements. Contact us by clicking the button below.
+          Custom tailored suits, shirts, jackets, trousers &amp; top coats - made to your
+          personal measurements. Contact us by clicking the button below.
           </p>
           <Link to="/contact">Book Your Appointment</Link>
         </Content>
@@ -50,7 +51,7 @@ const Home = (props) => {
             <StepNumber>3</StepNumber>
             <StepTitle>Enjoy Your Perfect Fit</StepTitle>
             <StepDescription>
-              Receive your items in 3-5 weeks. Reorder at our stores or online.
+              Receive your items in 5-6 weeks at your door.
             </StepDescription>
           </Step>
         </StepsContent>

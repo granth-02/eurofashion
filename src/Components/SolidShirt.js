@@ -15,7 +15,7 @@ const SolidShirt = (props) => {
           </Content>
           <ImageContainer>
             <img
-              src="https://img.freepik.com/premium-photo/hanging-shirt-with-wood-hanger-wall_1339-174608.jpg"
+              src="https://img.freepik.com/free-photo/still-life-with-classic-shirts-hanger_23-2150828588.jpg"
               alt="Man in Suit"
             />
           </ImageContainer>

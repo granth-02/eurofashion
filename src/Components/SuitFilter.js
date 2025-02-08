@@ -51,10 +51,6 @@ const SuitFilter = (props) => {
             <img src="https://img.freepik.com/premium-photo/close-up-brown-colour-cotton-fabric-tartare-background_126740-2117.jpg?semt=ais_hybrid" alt="Brown" />
             <p>Brown</p>
           </CircleImageHolder>
-          <CircleImageHolder to="/suits/colors/olive">
-            <img src="https://img.freepik.com/premium-photo/book-cover-canvas-textured-green-background_1218049-4421.jpg" alt="Olive" />
-            <p>Olive</p>
-          </CircleImageHolder>
           <CircleImageHolder to="/suits/colors/beige">
             <img src="https://img.freepik.com/free-photo/blank-abstract-textured-background_23-2148624420.jpg" alt="Beige" />
             <p>Beige</p>

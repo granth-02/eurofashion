@@ -1,30 +1,30 @@
-import styled from "styled-components"
-import SuitFilter from "./SuitFilter"
-import SuitCard from "./SuitCard"
+import styled from "styled-components";
+import SuitFilter from "./SuitFilter";
+import SuitCard from "./SuitCard.js";
 
-const LinenSuit = (props) => {
+
+const Jacket = () => {
   return (
     <Suitgrid>
-        <SuitFilter />
         <Type>
           <Content>
-            <h1>LINEN</h1>
+            <h1>JACKETS</h1>
             <p>
-            A linen suit is a versatile garment that can be worn casually or for formal occasions. It&#39;s made from flax plant fibers and is known for being lightweight, breathable, and comfortable. Linen suits are often worn in warm weather and can be dressed up or down.
+            Formal jackets are structured and elegant, designed for professional and dress occasions. They offer a polished look, typically worn with dress shirts and trousers, ensuring a refined and sophisticated appearance.
             </p>
+          
           </Content>
           <ImageContainer>
             <img
-              src="https://img.freepik.com/premium-photo/branded-linen-suit-isolated-white-background_94628-23329.jpg"
+              src="https://img.freepik.com/premium-photo/suit-with-name-tag-it-is-hanging-hanger_1271244-164857.jpg"
               alt="Man in Suit"
             />
           </ImageContainer>
         </Type>
-        {/* <PatternSuitCard pattern="HB"/> */}
-        <SuitCard pattern="Linen" />
+        <SuitCard pattern="Jacket"/>
     </Suitgrid>
-  )
-}
+  );
+};
 
 const Suitgrid = styled.div`
     position: relative;
@@ -38,7 +38,7 @@ const Type = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 61vh;
+  height: 60vh;
   padding: 2rem;
   background-color: #f5f5f5;
   margin-bottom: 30px;
@@ -136,4 +136,7 @@ const ImageContainer = styled.div`
     }
   }
 `;
-export default LinenSuit
+
+
+
+export default Jacket;

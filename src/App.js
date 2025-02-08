@@ -25,6 +25,7 @@ import BeigeSuit from './Components/BeigeSuit';
 import SelfSuit from './Components/SelfSuit';
 import KnowShirt from './Components/KnowShirt';
 import LinenShirt from './Components/LinenShirt';
+import Jacket from './Components/Jacket';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path='/know-your-shirt' element={<KnowShirt />} />
           <Route path='/suits' element={<Suits />} />
           <Route path='/shirts' element={<Shirts />} />
+          <Route path='/jackets' element={<Jacket />} />
           <Route path='/suits/colors/blue' element={<BlueSuit />} />
           <Route path='/suits/colors/grey' element={<GreySuit />} />
           <Route path='/suits/colors/black' element={<BlackSuit />} />
