@@ -13,7 +13,7 @@ const Contact = () => {
             <FaCalendarAlt size={40} />
           </IconWrapper>
           <Title>Our Next Visit</Title>
-          <Text><strong>Cities:</strong> Germany, Switzerland, Belgium, Luxembourg </Text>
+          <Text><strong></strong> Germany, Switzerland, Belgium, Luxembourg </Text>
           <Text><strong>From:</strong> 10th March, 2025</Text>
           <Text><strong>To:</strong> 16th April, 2025</Text>
         </VisitCard>
@@ -34,10 +34,8 @@ const Contact = () => {
               <FaPhoneAlt size={40} />
             </IconWrapper>
             <Title>Phone</Title>
-            <Text><strong>International</strong></Text>
             <Text>+49 160 506 5225</Text>
             <Text>+41 79 3888 336 </Text>
-            <Text><strong>Indian</strong></Text>
             <Text>+91 94263 93946  </Text>
           </Card>
 
