@@ -14,7 +14,7 @@ const ShirtFilter = (props) => {
           </CircleImageHolder>
           <CircleImageHolder to="/shirts/patterns/HB">
             <img src="https://www.apposta.com/MTF//Content/menu/Spinato.jpg" alt="HB" />
-            <p>HB</p>
+            <p>Self </p>
           </CircleImageHolder>
           <CircleImageHolder to="/shirts/patterns/solid">
             <img src="https://cdn-gen.shabbyfabrics.com/image/350x350/pid-88370-bellasolids-9900-262-nomark.jpg?1581724800" alt="Solid" />

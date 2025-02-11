@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import SuitFilter from "./SuitFilter";
 import SuitCard from "./SuitCard.js";
 
 
@@ -10,7 +9,7 @@ const Jacket = () => {
           <Content>
             <h1>JACKETS</h1>
             <p>
-            Formal jackets are structured and elegant, designed for professional and dress occasions. They offer a polished look, typically worn with dress shirts and trousers, ensuring a refined and sophisticated appearance.
+            Jackets are structured and elegant, suitable for both casual and professional occasions. They provide a refined look and can be styled with dress shirts or T-shirts. Whether paired with jeans or trousers, they ensure a sophisticated appearance.
             </p>
           
           </Content>

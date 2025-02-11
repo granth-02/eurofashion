@@ -41,7 +41,7 @@ const Navbar = () => {
             </StyledLink>
             <DropdownContent>
               <StyledLink to="/know-your-shirt" onClick={closeMenu}>KNOW YOUR SHIRT</StyledLink>
-              <StyledLink to="/shirts" onClick={closeMenu}>STYLES</StyledLink>
+              <StyledLink to="/shirts" onClick={closeMenu}>FABRICS</StyledLink>
             </DropdownContent>
           </Dropdown>
           <StyledLink to="/jackets" onClick={closeMenu}>

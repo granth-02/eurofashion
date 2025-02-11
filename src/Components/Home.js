@@ -14,7 +14,7 @@ const Home = (props) => {
           Custom tailored suits, shirts, jackets, trousers &amp; top coats - made to your
           personal measurements. Contact us by clicking the button below.
           </p>
-          <Link to="/contact">Book Your Appointment</Link>
+          <Link to="/contact">Contact Us</Link>
         </Content>
         <ImageContainer>
           <img
@@ -26,7 +26,7 @@ const Home = (props) => {
       <Steps>
         <ImageWrapper>
           <img
-            src="https://img.freepik.com/free-photo/still-life-fashion-designer-s-office_23-2150543693.jpg?ga=GA1.1.1655565684.1734342902&semt=ais_hybrid" // Replace with your desired image URL
+            src="https://president-tailors.com/wp-content/uploads/2023/05/Suit-fabrics-1024x851.webp" 
             alt="Steps Illustration"
             // https://img.freepik.com/premium-photo/suit-jackets-hanger-men-fashion-apparel-store-row-many-clothes-rack-wardrobe-n_489084-106.jpg
           />
@@ -36,7 +36,7 @@ const Home = (props) => {
             <StepNumber>1</StepNumber>
             <StepTitle>Book Your Appointment</StepTitle>
             <StepDescription>
-              Book your appointment by filling out our form.
+              Book your appointment by sending us an email .
             </StepDescription>
           </Step>
           <Step>

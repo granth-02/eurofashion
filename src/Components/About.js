@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ash from "../Images/Ash.jpg"
 
 const About = (props) => {
   console.log("Surprise ;) : https://www.youtube.com/watch?v=dQw4w9WgXcQ")
@@ -10,20 +11,20 @@ const About = (props) => {
       </AboutContent>
     </AboutContainer>
 
-      {/* <TeamSection>
+      <TeamSection>
         <TeamMember>
           <ImageContainer>
-            <img src="https://www.hollywoodreporter.com/wp-content/uploads/2013/11/lebron_james_original.jpg" alt="Neil McCann" />
+            <img src={ash} alt="Ashwani" />
           </ImageContainer>
           <MemberDetails>
-            <MemberTitle>CEO & FOUNDER</MemberTitle>
-            <MemberName>Ashwani </MemberName>
+            <MemberTitle>Fashion Advisor</MemberTitle>
+            <MemberName>Ashwani Kumar</MemberName>
             <MemberDescription>
-              Tailoring to your needs since 95'
+              {/* Tailoring to your needs since 95 */}
             </MemberDescription>
           </MemberDetails>
         </TeamMember>
-        <TeamMember>
+        {/* <TeamMember>
           <ImageContainer>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2U5HdAClyn3dtl29Ht-dxt7zjw0-HDEThmg&s" alt="Alex Katseph" />
           </ImageContainer>
@@ -34,8 +35,8 @@ const About = (props) => {
               Greatest Basketball Player In Surat 
             </MemberDescription>
           </MemberDetails>
-        </TeamMember>
-      </TeamSection> */}
+        </TeamMember> */}
+      </TeamSection>
       <TextContent>
       <SubTitle>WHO WE ARE?</SubTitle>
         <Text>
