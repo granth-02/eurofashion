@@ -7,13 +7,13 @@ import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import ZoomOutIcon from "@mui/icons-material/ZoomOut";
 import DialogTitle from "@mui/material/DialogTitle";
 import axios from "axios";
-import CircularProgress from "@mui/material/CircularProgress"; // Import CircularProgress
+import CircularProgress from "@mui/material/CircularProgress"; 
 
 const API_URL =
   "https://script.google.com/macros/s/AKfycbxpmV00PpzE0D4RWH_Bov2TTe0HyUZllZ5kPTIIDqGHPeqpPsUnnEcYFPOWGJ_Ajma4/exec"
 const SuitCard = ({ color, pattern }) => {
   const [suits, setSuits] = useState([]);
-  const [loading, setLoading] = useState(true); // Added state for loading indicator
+  const [loading, setLoading] = useState(true); 
   const [open, setOpen] = useState(false);
   const [selectedSuit, setSelectedSuit] = useState(null);
   const [zoom, setZoom] = useState(1);
@@ -29,7 +29,7 @@ const SuitCard = ({ color, pattern }) => {
           // console.log('first', response.data);
         } else {
           console.error("Data is not in expected format:", response.data);
-          setSuits([]); // Ensure suits is an array
+          setSuits([]); 
         }
       } catch (error) {
         console.error("Error fetching suits:", error);

@@ -1,9 +1,25 @@
 import styled from "styled-components";
 import ImgSlider from "./ImageSlider";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
 
 const Home = (props) => {
   console.log("About the Dev: This site was developed by Granth Naik, Github: https://github.com/granth-02/, Linkdn: www.linkedin.com/in/granthnaik")
+  
+  useEffect(() => {
+    const sendIP = async () => {
+      try {
+        await fetch("https://euro-stats.granth-naik02.workers.dev/api/stats", {
+          method: "POST",
+        }); 
+      } catch (err) {
+        console.error("Failed to send IP to stats", err)
+      }
+    };
+    sendIP();
+  }, []);
+  
   return (
     <>
     <Container>
