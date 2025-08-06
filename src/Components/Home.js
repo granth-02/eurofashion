@@ -34,9 +34,10 @@ const Home = (props) => {
         </Content>
         <ImageContainer>
           <img
-            src="https://wallpapers.com/images/hd/man-in-suit-pictures-vyjjbqkjo4p4yp19.jpg"
+            src="https://i.ibb.co/twZRnkyN/Home-page.jpg"
             alt="Man in Suit"
           />
+          {/* https://wallpapers.com/images/hd/man-in-suit-pictures-vyjjbqkjo4p4yp19.jpg */}
         </ImageContainer>
       </Contact>
       <Steps>
@@ -175,10 +176,10 @@ const ImageContainer = styled.div`
 
   img {
     max-width: 100%;
-    max-height: auto;
+    max-height: 520px;
     object-fit: contain;
     border-radius: 10px;
-
+    
     @media (max-width: 768px) {
       max-height: 50vh;
       margin-top: 50px;

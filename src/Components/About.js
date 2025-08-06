@@ -24,18 +24,18 @@ const About = (props) => {
             </MemberDescription>
           </MemberDetails>
         </TeamMember>
-        {/* <TeamMember>
+        <TeamMember>
           <ImageContainer>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2U5HdAClyn3dtl29Ht-dxt7zjw0-HDEThmg&s" alt="Alex Katseph" />
+            <img src="https://i.ibb.co/HfMGtb4X/kaus.jpg" alt="Kaustubh" />
           </ImageContainer>
           <MemberDetails>
-            <MemberTitle>SALES MANAGER</MemberTitle>
-            <MemberName>Kaus</MemberName>
+            <MemberTitle>Fashion Advisor</MemberTitle>
+            <MemberName>Kaustubh</MemberName>
             <MemberDescription>
-              Greatest Basketball Player In Surat 
+              {/* Greatest Basketball Player In Surat  */}
             </MemberDescription>
           </MemberDetails>
-        </TeamMember> */}
+        </TeamMember>
       </TeamSection>
       <TextContent>
       <SubTitle>WHO WE ARE?</SubTitle>

@@ -13,9 +13,12 @@ const Contact = () => {
             <FaCalendarAlt size={40} />
           </IconWrapper>
           <Title>Our Next Visit</Title>
-          <Text><strong></strong> Germany, Switzerland, Belgium, Luxembourg </Text>
-          <Text><strong>From:</strong> 10th March, 2025</Text>
-          <Text><strong>To:</strong> 16th April, 2025</Text>
+          <Text><strong>Switzerland</strong></Text>
+          <Text><strong>From:</strong> 9th September, 2025</Text>
+          <Text><strong>To:</strong> 16th September, 2025</Text>
+          <Text><strong>Germany, Belgium, Luxembourg</strong> </Text>
+          <Text><strong>From:</strong> 21st September, 2025</Text>
+          <Text><strong>To:</strong> 16th October, 2025</Text>
         </VisitCard>
 
         <Grid>

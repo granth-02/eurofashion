@@ -255,16 +255,16 @@ const KnowShirt = () => {
       <Title>OTHER CUSTOMIZATIONS</Title>
         <CircleGridContainer>
         <CircleImageHolder>
-            <img src="https://i.ibb.co/BHL8bN7y/Shirt-Pocket.jpg" alt="Solid" />
+            <img src="https://i.ibb.co/YTbczDH6/shirt-pocket.png" alt="Solid"  />
             <p>Pockets <br></br>(With or Without)</p>
           </CircleImageHolder>
           <CircleImageHolder>
-            <img src="https://cdn.sanity.io/images/tgi56uf8/production/a90f8d03f78cd9f617d09aebf965f6a48536033a-5464x8192.jpg?rect=0,886,5464,6420&w=800&h=940&auto=format" alt="Solid" />
+            <img src="https://i.ibb.co/JjLkmzcp/embro.png" alt="Solid" />
             <p>Initial Embroidary (Chest, Waist, Cuffs)<br></br>(Contrast/No Contrast)</p>
           </CircleImageHolder>
           <CircleImageHolder>
-            <img src="https://d2c7pv42xi6lat.cloudfront.net/assets/help/shortsleeve-33c516805828503c93de1ed77718e48cf831d65c257ae0aa32acb07ab8bd08f8.jpg" alt="Solid" />
-            <p>Short Sleeves Cuff <br></br>(Plain, Cuffed)</p>
+            <img src="https://i.ibb.co/dskTsXhw/sleeves.jpg" alt="Solid" />
+            <p>Sleeves Options<br></br></p>
           </CircleImageHolder>
         </CircleGridContainer>
       </FilterContainer>
