@@ -29,7 +29,7 @@ const About = (props) => {
             <img src="https://i.ibb.co/HfMGtb4X/kaus.jpg" alt="Kaustubh" />
           </ImageContainer>
           <MemberDetails>
-            <MemberTitle>Fashion Advisor</MemberTitle>
+            <MemberTitle>Sales Executive</MemberTitle>
             <MemberName>Kaustubh</MemberName>
             <MemberDescription>
               {/* Greatest Basketball Player In Surat  */}
