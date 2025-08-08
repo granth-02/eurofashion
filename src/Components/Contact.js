@@ -14,10 +14,10 @@ const Contact = () => {
           </IconWrapper>
           <Title>Our Next Visit</Title>
           <Text><strong>Switzerland</strong></Text>
-          <Text><strong>From:</strong> 9th September, 2025</Text>
-          <Text><strong>To:</strong> 16th September, 2025</Text>
+          <Text><strong>From:</strong> 8th September, 2025</Text>
+          <Text><strong>To:</strong> 18th September, 2025</Text>
           <Text><strong>Germany, Belgium, Luxembourg</strong> </Text>
-          <Text><strong>From:</strong> 21st September, 2025</Text>
+          <Text><strong>From:</strong> 19th September, 2025</Text>
           <Text><strong>To:</strong> 16th October, 2025</Text>
         </VisitCard>
 
