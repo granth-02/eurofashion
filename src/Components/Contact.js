@@ -14,11 +14,11 @@ const Contact = () => {
           </IconWrapper>
           <Title>Our Next Visit</Title>
           <Text><strong>Switzerland</strong></Text>
-          <Text><strong>From:</strong> 16th February, 2026</Text>
-          <Text><strong>To:</strong> 26th February, 2026</Text>
+          <Text><strong>From:</strong> 31st August, 2026</Text>
+          <Text><strong>To:</strong> 10th September, 2026</Text>
           <Text><strong>Germany, Belgium, Luxembourg</strong> </Text>
-          <Text><strong>From:</strong> 27th February, 2026</Text>
-          <Text><strong>To:</strong> 26th March, 2026</Text>
+          <Text><strong>From:</strong> 11th September, 2026</Text>
+          <Text><strong>To:</strong> 7th October, 2026</Text>
         </VisitCard>
 
         <Grid>
